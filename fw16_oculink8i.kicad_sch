@@ -633,7 +633,7 @@
 							)
 						)
 					)
-					(number "5"
+					(number "SH"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -957,7 +957,7 @@
 				)
 			)
 			(property "Description" "Unpolarized capacitor, small symbol"
-				(at 0 0 0)
+				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1007,7 +1007,7 @@
 						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -1417,7 +1417,7 @@
 				)
 			)
 			(symbol "FXBeam_MultiUnit_1_0"
-				(pin power_out line
+				(pin power_in line
 					(at -20.32 -26.67 0)
 					(length 5.08)
 					(name "VADP_GPU"
@@ -1435,7 +1435,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin power_in line
 					(at -20.32 -24.13 0)
 					(length 5.08)
 					(name "VADP_GPU"
@@ -1453,7 +1453,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 45.72 180)
 					(length 5.08)
 					(name "GND"
@@ -1507,7 +1507,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 43.18 180)
 					(length 5.08)
 					(name "GND"
@@ -1597,7 +1597,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 40.64 180)
 					(length 5.08)
 					(name "GND"
@@ -1633,7 +1633,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at -20.32 34.29 0)
 					(length 5.08)
 					(name "3V3_ALW"
@@ -1651,7 +1651,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 38.1 180)
 					(length 5.08)
 					(name "GND"
@@ -1705,7 +1705,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin power_in line
 					(at -20.32 -16.51 0)
 					(length 5.08)
 					(name "VADP_GPU"
@@ -1759,7 +1759,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 35.56 180)
 					(length 5.08)
 					(name "GND"
@@ -1813,7 +1813,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 33.02 180)
 					(length 5.08)
 					(name "GND"
@@ -1831,7 +1831,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 30.48 180)
 					(length 5.08)
 					(name "GND"
@@ -1867,7 +1867,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 27.94 180)
 					(length 5.08)
 					(name "GND"
@@ -1921,7 +1921,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 25.4 180)
 					(length 5.08)
 					(name "GND"
@@ -1939,7 +1939,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 22.86 180)
 					(length 5.08)
 					(name "GND"
@@ -1957,7 +1957,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 20.32 180)
 					(length 5.08)
 					(name "GND"
@@ -1975,7 +1975,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 17.78 180)
 					(length 5.08)
 					(name "GND"
@@ -2029,7 +2029,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 15.24 180)
 					(length 5.08)
 					(name "GND"
@@ -2065,7 +2065,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin output line
 					(at 20.32 -43.18 180)
 					(length 5.08)
 					(name "SSD1_RST#"
@@ -2083,7 +2083,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 12.7 180)
 					(length 5.08)
 					(name "GND"
@@ -2137,7 +2137,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -20.32 -53.34 0)
 					(length 5.08)
 					(name "GPIO0_EC"
@@ -2155,7 +2155,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at 20.32 -49.53 180)
 					(length 5.08)
 					(name "SSD2_CLK_REQ#"
@@ -2173,7 +2173,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at 20.32 -45.72 180)
 					(length 5.08)
 					(name "SSD2_RST#"
@@ -2191,7 +2191,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 10.16 180)
 					(length 5.08)
 					(name "GND"
@@ -2227,7 +2227,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at -20.32 22.86 0)
 					(length 5.08)
 					(name "VSYS_GPU"
@@ -2245,7 +2245,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -20.32 -50.8 0)
 					(length 5.08)
 					(name "GPIO1_EC"
@@ -2281,7 +2281,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 7.62 180)
 					(length 5.08)
 					(name "GND"
@@ -2299,7 +2299,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 5.08 180)
 					(length 5.08)
 					(name "GND"
@@ -2317,7 +2317,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 2.54 180)
 					(length 5.08)
 					(name "GND"
@@ -2335,7 +2335,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 0 180)
 					(length 5.08)
 					(name "GND"
@@ -2353,7 +2353,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin input line
 					(at 20.32 -53.34 180)
 					(length 5.08)
 					(name "ID0"
@@ -2407,7 +2407,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 -2.54 180)
 					(length 5.08)
 					(name "GND"
@@ -2425,7 +2425,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 -5.08 180)
 					(length 5.08)
 					(name "GND"
@@ -2443,7 +2443,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 -7.62 180)
 					(length 5.08)
 					(name "GND"
@@ -2461,7 +2461,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin bidirectional line
 					(at 20.32 -36.83 180)
 					(length 5.08)
 					(name "DDS_SDA"
@@ -2515,7 +2515,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 -10.16 180)
 					(length 5.08)
 					(name "GND"
@@ -2551,7 +2551,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 -12.7 180)
 					(length 5.08)
 					(name "GND"
@@ -2587,7 +2587,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at -20.32 45.72 0)
 					(length 5.08)
 					(name "5V_ALW"
@@ -2623,7 +2623,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin output line
 					(at 20.32 -39.37 180)
 					(length 5.08)
 					(name "DDS_CLK"
@@ -2641,7 +2641,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 -15.24 180)
 					(length 5.08)
 					(name "GND"
@@ -2659,7 +2659,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at -20.32 -30.48 0)
 					(length 5.08)
 					(name "12V_FAN"
@@ -2695,7 +2695,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 -17.78 180)
 					(length 5.08)
 					(name "GND"
@@ -2772,7 +2772,7 @@
 				)
 			)
 			(symbol "FXBeam_MultiUnit_2_0"
-				(pin unspecified line
+				(pin input line
 					(at 20.32 13.97 180)
 					(length 5.08)
 					(name "PEX_RX6P"
@@ -2790,7 +2790,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 20.32 2.54 180)
 					(length 5.08)
 					(name "GPIO2_EC"
@@ -2808,7 +2808,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at 20.32 24.13 180)
 					(length 5.08)
 					(name "PEX_RX4P"
@@ -2826,7 +2826,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 0 0)
 					(length 5.08)
 					(name "PEX_CLK_REQ#"
@@ -2844,7 +2844,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at -20.32 2.54 0)
 					(length 5.08)
 					(name "PEX_RST#"
@@ -2862,7 +2862,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at 20.32 26.67 180)
 					(length 5.08)
 					(name "PEX_RX3N"
@@ -2880,7 +2880,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at -20.32 -34.29 0)
 					(length 5.08)
 					(name "DP_A_HPD"
@@ -2898,7 +2898,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at 20.32 36.83 180)
 					(length 5.08)
 					(name "PEX_RX1N"
@@ -2916,7 +2916,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at 20.32 11.43 180)
 					(length 5.08)
 					(name "PEX_RX6N"
@@ -2934,7 +2934,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 -3.81 180)
 					(length 5.08)
 					(name "GND"
@@ -2952,7 +2952,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at 20.32 21.59 180)
 					(length 5.08)
 					(name "PEX_RX4N"
@@ -2970,7 +2970,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at -20.32 -50.8 0)
 					(length 5.08)
 					(name "DGPU_PWM_SEL"
@@ -2988,7 +2988,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 -48.26 0)
 					(length 5.08)
 					(name "TH_ALERT#"
@@ -3006,7 +3006,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at 20.32 29.21 180)
 					(length 5.08)
 					(name "PEX_RX3P"
@@ -3024,7 +3024,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 -6.35 180)
 					(length 5.08)
 					(name "GND"
@@ -3042,7 +3042,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at 20.32 39.37 180)
 					(length 5.08)
 					(name "PEX_RX1P"
@@ -3060,7 +3060,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 -8.89 180)
 					(length 5.08)
 					(name "GND"
@@ -3078,7 +3078,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 -2.54 0)
 					(length 5.08)
 					(name "PEX_REFCLK"
@@ -3096,7 +3096,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 -11.43 180)
 					(length 5.08)
 					(name "GND"
@@ -3114,7 +3114,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 -13.97 180)
 					(length 5.08)
 					(name "GND"
@@ -3132,7 +3132,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 -13.97 0)
 					(length 5.08)
 					(name "DP_A_L1N"
@@ -3150,7 +3150,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 -16.51 180)
 					(length 5.08)
 					(name "GND"
@@ -3168,7 +3168,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at 20.32 6.35 180)
 					(length 5.08)
 					(name "PEX_RX7N"
@@ -3186,7 +3186,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 -5.08 0)
 					(length 5.08)
 					(name "PEX_REFCLK#"
@@ -3204,7 +3204,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at 20.32 19.05 180)
 					(length 5.08)
 					(name "PEX_RX5P"
@@ -3222,7 +3222,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at 20.32 31.75 180)
 					(length 5.08)
 					(name "PEX_RX2N"
@@ -3240,7 +3240,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 -16.51 0)
 					(length 5.08)
 					(name "DP_A_L1P"
@@ -3258,7 +3258,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at 20.32 41.91 180)
 					(length 5.08)
 					(name "PEX_RX0N"
@@ -3276,7 +3276,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at 20.32 8.89 180)
 					(length 5.08)
 					(name "PEX_RX7P"
@@ -3294,7 +3294,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 -19.05 180)
 					(length 5.08)
 					(name "GND"
@@ -3312,7 +3312,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at 20.32 16.51 180)
 					(length 5.08)
 					(name "PEX_RX5N"
@@ -3330,7 +3330,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at 20.32 34.29 180)
 					(length 5.08)
 					(name "PEX_RX2P"
@@ -3348,7 +3348,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 -21.59 180)
 					(length 5.08)
 					(name "GND"
@@ -3366,7 +3366,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at 20.32 44.45 180)
 					(length 5.08)
 					(name "PEX_RX0P"
@@ -3384,7 +3384,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 -24.13 180)
 					(length 5.08)
 					(name "GND"
@@ -3402,7 +3402,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 -24.13 0)
 					(length 5.08)
 					(name "DP_A_L3N"
@@ -3420,7 +3420,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 -26.67 180)
 					(length 5.08)
 					(name "GND"
@@ -3438,7 +3438,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 -29.21 180)
 					(length 5.08)
 					(name "GND"
@@ -3456,7 +3456,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 -8.89 0)
 					(length 5.08)
 					(name "DP_A_L0N"
@@ -3474,7 +3474,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 -31.75 180)
 					(length 5.08)
 					(name "GND"
@@ -3492,7 +3492,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 6.35 0)
 					(length 5.08)
 					(name "PEX_TX7N"
@@ -3510,7 +3510,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 -26.67 0)
 					(length 5.08)
 					(name "DP_A_L3P"
@@ -3528,7 +3528,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 16.51 0)
 					(length 5.08)
 					(name "PEX_TX5N"
@@ -3546,7 +3546,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 34.29 0)
 					(length 5.08)
 					(name "PEX_TX2P"
@@ -3564,7 +3564,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 -11.43 0)
 					(length 5.08)
 					(name "DP_A_L0P"
@@ -3582,7 +3582,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 41.91 0)
 					(length 5.08)
 					(name "PEX_TX0N"
@@ -3600,7 +3600,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 8.89 0)
 					(length 5.08)
 					(name "PEX_TX7P"
@@ -3618,7 +3618,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 -34.29 180)
 					(length 5.08)
 					(name "GND"
@@ -3636,7 +3636,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 19.05 0)
 					(length 5.08)
 					(name "PEX_TX5P"
@@ -3654,7 +3654,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 31.75 0)
 					(length 5.08)
 					(name "PEX_TX2N"
@@ -3672,7 +3672,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 -36.83 180)
 					(length 5.08)
 					(name "GND"
@@ -3690,7 +3690,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 44.45 0)
 					(length 5.08)
 					(name "PEX_TX0P"
@@ -3708,7 +3708,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 -39.37 180)
 					(length 5.08)
 					(name "GND"
@@ -3726,7 +3726,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 -19.05 0)
 					(length 5.08)
 					(name "DP_A_L2N"
@@ -3744,7 +3744,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 -41.91 180)
 					(length 5.08)
 					(name "GND"
@@ -3762,7 +3762,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 -44.45 180)
 					(length 5.08)
 					(name "GND"
@@ -3780,7 +3780,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 -29.21 0)
 					(length 5.08)
 					(name "DP_A_AUXN"
@@ -3799,7 +3799,7 @@
 					)
 					(alternate "PEX_REFCLK2#" unspecified line)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 20.32 -46.99 180)
 					(length 5.08)
 					(name "GND"
@@ -3817,7 +3817,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 13.97 0)
 					(length 5.08)
 					(name "PEX_TX6P"
@@ -3835,7 +3835,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 -21.59 0)
 					(length 5.08)
 					(name "DP_A_L2P"
@@ -3853,7 +3853,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 24.13 0)
 					(length 5.08)
 					(name "PEX_TX4P"
@@ -3871,7 +3871,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 -38.1 0)
 					(length 5.08)
 					(name "PNL_BL_PWM"
@@ -3889,7 +3889,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 -40.64 0)
 					(length 5.08)
 					(name "PNL_PWR_EN"
@@ -3907,7 +3907,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 26.67 0)
 					(length 5.08)
 					(name "PEX_TX3N"
@@ -3925,7 +3925,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 -31.75 0)
 					(length 5.08)
 					(name "DP_A_AUXP"
@@ -3944,7 +3944,7 @@
 					)
 					(alternate "PEX_REFCLK2" unspecified line)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 36.83 0)
 					(length 5.08)
 					(name "PEX_TX1N"
@@ -3962,7 +3962,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 11.43 0)
 					(length 5.08)
 					(name "PEX_TX6N"
@@ -3980,7 +3980,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at 20.32 -50.8 180)
 					(length 5.08)
 					(name "ID1"
@@ -3998,7 +3998,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 21.59 0)
 					(length 5.08)
 					(name "PEX_TX4N"
@@ -4016,7 +4016,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 -43.18 0)
 					(length 5.08)
 					(name "PNL_BL_EN"
@@ -4034,7 +4034,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 -45.72 0)
 					(length 5.08)
 					(name "TH_OVERT#"
@@ -4052,7 +4052,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 29.21 0)
 					(length 5.08)
 					(name "PEX_TX3P"
@@ -4070,7 +4070,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 20.32 0 180)
 					(length 5.08)
 					(name "GPIO3_EC"
@@ -4088,7 +4088,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -20.32 39.37 0)
 					(length 5.08)
 					(name "PEX_TX1P"
@@ -7008,8 +7008,8 @@
 		(uuid "3e909d75-9cec-46bc-9ca0-20d82ec97b82")
 	)
 	(rectangle
-		(start 363.22 15.24)
-		(end 403.86 26.67)
+		(start 391.16 29.21)
+		(end 401.32 40.64)
 		(stroke
 			(width 0)
 			(type default)
@@ -7056,8 +7056,8 @@
 		(uuid "b8cef523-5de8-4426-9daa-1ae720e05504")
 	)
 	(rectangle
-		(start 363.22 30.48)
-		(end 403.86 58.42)
+		(start 363.22 16.51)
+		(end 403.86 44.45)
 		(stroke
 			(width 0)
 			(type default)
@@ -7189,7 +7189,7 @@
 	)
 	(text "Mounting"
 		(exclude_from_sim no)
-		(at 366.268 36.322 0)
+		(at 366.268 22.352 0)
 		(effects
 			(font
 				(size 5.08 5.08)
@@ -7528,7 +7528,7 @@
 		(uuid "71f1249b-bc3d-451f-a2c2-808c260d8769")
 	)
 	(junction
-		(at 375.92 50.8)
+		(at 375.92 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "721a2d9b-e0a5-44a4-adf0-522c08f7a1d5")
@@ -7672,7 +7672,7 @@
 		(uuid "b9465247-9ac4-4aa7-91c6-1b80f116f4d9")
 	)
 	(junction
-		(at 370.84 50.8)
+		(at 370.84 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "be27c28a-56b0-45cb-a240-9dc3415565fe")
@@ -7810,7 +7810,7 @@
 		(uuid "fc735052-b84a-437b-9b8e-9574f8627c32")
 	)
 	(junction
-		(at 381 50.8)
+		(at 381 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fd43eaf4-c753-4c2b-9017-f028471a56d2")
@@ -8613,7 +8613,7 @@
 	)
 	(wire
 		(pts
-			(xy 381 48.26) (xy 381 50.8)
+			(xy 381 34.29) (xy 381 36.83)
 		)
 		(stroke
 			(width 0)
@@ -8833,17 +8833,7 @@
 	)
 	(wire
 		(pts
-			(xy 377.19 22.86) (xy 377.19 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2a406fd5-f51c-41f3-a60e-a115fb566e2e")
-	)
-	(wire
-		(pts
-			(xy 370.84 48.26) (xy 370.84 50.8)
+			(xy 370.84 34.29) (xy 370.84 36.83)
 		)
 		(stroke
 			(width 0)
@@ -9203,16 +9193,6 @@
 	)
 	(wire
 		(pts
-			(xy 369.57 25.4) (xy 367.03 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "429acefb-d11b-488e-a425-a0de4f7f9d10")
-	)
-	(wire
-		(pts
 			(xy 45.72 243.84) (xy 45.72 246.38)
 		)
 		(stroke
@@ -9503,7 +9483,7 @@
 	)
 	(wire
 		(pts
-			(xy 375.92 50.8) (xy 381 50.8)
+			(xy 375.92 36.83) (xy 381 36.83)
 		)
 		(stroke
 			(width 0)
@@ -9703,7 +9683,7 @@
 	)
 	(wire
 		(pts
-			(xy 381 50.8) (xy 386.08 50.8)
+			(xy 381 36.83) (xy 386.08 36.83)
 		)
 		(stroke
 			(width 0)
@@ -9873,16 +9853,6 @@
 	)
 	(wire
 		(pts
-			(xy 379.73 25.4) (xy 379.73 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d6045c4-145e-4c64-8d25-15129594e893")
-	)
-	(wire
-		(pts
 			(xy 87.63 44.45) (xy 87.63 46.99)
 		)
 		(stroke
@@ -10023,16 +9993,6 @@
 	)
 	(wire
 		(pts
-			(xy 389.89 22.86) (xy 389.89 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b53a0ca-776e-45db-8adc-dbbb55c7db87")
-	)
-	(wire
-		(pts
 			(xy 81.28 201.93) (xy 81.28 204.47)
 		)
 		(stroke
@@ -10080,16 +10040,6 @@
 			(type default)
 		)
 		(uuid "7c2bbf42-24fd-4f56-88aa-7baae10a9525")
-	)
-	(wire
-		(pts
-			(xy 387.35 25.4) (xy 389.89 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7c7591b2-e4fb-4df9-86a1-e5b047aefce7")
 	)
 	(wire
 		(pts
@@ -10223,7 +10173,7 @@
 	)
 	(wire
 		(pts
-			(xy 375.92 48.26) (xy 375.92 50.8)
+			(xy 375.92 34.29) (xy 375.92 36.83)
 		)
 		(stroke
 			(width 0)
@@ -10883,16 +10833,6 @@
 	)
 	(wire
 		(pts
-			(xy 387.35 22.86) (xy 387.35 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b693bfbc-53f7-4fef-887e-793461108d0f")
-	)
-	(wire
-		(pts
 			(xy 157.48 91.44) (xy 157.48 93.98)
 		)
 		(stroke
@@ -10940,16 +10880,6 @@
 			(type default)
 		)
 		(uuid "b8f35f94-800d-4384-826f-51f5cb9542ac")
-	)
-	(wire
-		(pts
-			(xy 367.03 25.4) (xy 367.03 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b92a5749-25cf-4346-89c6-853ba3f419ea")
 	)
 	(wire
 		(pts
@@ -11043,23 +10973,13 @@
 	)
 	(wire
 		(pts
-			(xy 398.78 21.59) (xy 398.78 22.86)
+			(xy 396.24 35.56) (xy 396.24 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c0e449a3-dd65-4ec8-9610-dea64836259a")
-	)
-	(wire
-		(pts
-			(xy 369.57 22.86) (xy 369.57 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c11cee05-1475-4756-b4d5-692f29769746")
 	)
 	(wire
 		(pts
@@ -11093,7 +11013,7 @@
 	)
 	(wire
 		(pts
-			(xy 370.84 50.8) (xy 375.92 50.8)
+			(xy 370.84 36.83) (xy 375.92 36.83)
 		)
 		(stroke
 			(width 0)
@@ -11173,7 +11093,7 @@
 	)
 	(wire
 		(pts
-			(xy 370.84 50.8) (xy 370.84 53.34)
+			(xy 370.84 36.83) (xy 370.84 39.37)
 		)
 		(stroke
 			(width 0)
@@ -11333,7 +11253,7 @@
 	)
 	(wire
 		(pts
-			(xy 386.08 48.26) (xy 386.08 50.8)
+			(xy 386.08 34.29) (xy 386.08 36.83)
 		)
 		(stroke
 			(width 0)
@@ -11420,16 +11340,6 @@
 			(type default)
 		)
 		(uuid "d9b5a70d-64fe-43e2-93ea-bf96817f69c2")
-	)
-	(wire
-		(pts
-			(xy 377.19 25.4) (xy 379.73 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d9b65ea0-e8b4-4ab9-ae17-be213ae40b85")
 	)
 	(wire
 		(pts
@@ -13381,7 +13291,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 398.78 21.59 0)
+		(at 396.24 35.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13390,8 +13300,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "08db8145-ec80-4619-8f35-26be1b065232")
-		(property "Reference" "#FLG04"
-			(at 398.78 19.685 0)
+		(property "Reference" "#FLG01"
+			(at 396.24 33.655 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13402,7 +13312,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 398.78 16.764 0)
+			(at 396.24 30.734 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13412,7 +13322,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 398.78 21.59 0)
+			(at 396.24 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13423,7 +13333,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 398.78 21.59 0)
+			(at 396.24 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13434,7 +13344,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 398.78 21.59 0)
+			(at 396.24 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13450,7 +13360,7 @@
 		(instances
 			(project "fw16_oculink8i"
 				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
-					(reference "#FLG04")
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -14294,7 +14204,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 398.78 22.86 0)
+		(at 396.24 36.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14303,8 +14213,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "122271ab-edcc-466f-80d7-aca1c84803d4")
-		(property "Reference" "#PWR037"
-			(at 398.78 29.21 0)
+		(property "Reference" "#PWR034"
+			(at 396.24 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14315,7 +14225,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 401.32 23.114 0)
+			(at 398.78 37.084 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14325,7 +14235,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 398.78 22.86 0)
+			(at 396.24 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14336,7 +14246,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 398.78 22.86 0)
+			(at 396.24 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14347,7 +14257,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 398.78 22.86 0)
+			(at 396.24 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14363,7 +14273,7 @@
 		(instances
 			(project "fw16_oculink8i"
 				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
-					(reference "#PWR037")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -14526,7 +14436,7 @@
 	(symbol
 		(lib_id "Switch:SW_DPDT_x2")
 		(at 128.27 246.38 180)
-		(unit 2)
+		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14609,7 +14519,7 @@
 			(project "fw16_oculink8i"
 				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
 					(reference "SW1")
-					(unit 2)
+					(unit 1)
 				)
 			)
 		)
@@ -15030,7 +14940,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "41ab7345-5de9-4b7c-b174-8c62a3cc2027")
-		(property "Reference" "SW2"
+		(property "Reference" "SW1"
 			(at 128.27 258.064 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15104,7 +15014,7 @@
 		(instances
 			(project "fw16_oculink8i"
 				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
-					(reference "SW2")
+					(reference "SW1")
 					(unit 2)
 				)
 			)
@@ -15908,7 +15818,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 381 45.72 0)
+		(at 381 31.75 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15918,7 +15828,7 @@
 		(dnp no)
 		(uuid "609e173d-6716-4c43-a43a-1be0b75bbd10")
 		(property "Reference" "H3"
-			(at 379.73 41.402 0)
+			(at 379.73 27.432 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15929,7 +15839,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 383.54 45.7199 0)
+			(at 383.54 31.7499 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15941,7 +15851,7 @@
 			)
 		)
 		(property "Footprint" "Expansion_Bay:MountingHole_6.2mm_EasySolder_Cut"
-			(at 381 45.72 0)
+			(at 381 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15952,7 +15862,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 381 45.72 0)
+			(at 381 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15963,7 +15873,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 381 45.72 0)
+			(at 381 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16219,7 +16129,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 370.84 53.34 0)
+		(at 370.84 39.37 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16228,8 +16138,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6c17c8ea-3cf9-468e-894c-b378b373520c")
-		(property "Reference" "#PWR034"
-			(at 370.84 59.69 0)
+		(property "Reference" "#PWR033"
+			(at 370.84 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16240,7 +16150,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 373.38 53.594 0)
+			(at 373.38 39.624 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16250,7 +16160,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 370.84 53.34 0)
+			(at 370.84 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16261,7 +16171,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 370.84 53.34 0)
+			(at 370.84 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16272,7 +16182,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 370.84 53.34 0)
+			(at 370.84 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16288,7 +16198,7 @@
 		(instances
 			(project "fw16_oculink8i"
 				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
-					(reference "#PWR034")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -16530,83 +16440,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 387.35 22.86 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "70bb6260-a734-45fd-85af-31e0e8aa5225")
-		(property "Reference" "#FLG03"
-			(at 387.35 20.955 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 389.128 16.764 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 387.35 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 387.35 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 387.35 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "76fec41e-15f3-469a-93a6-3f56371190b9")
-		)
-		(instances
-			(project "fw16_oculink8i"
-				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
-					(reference "#FLG03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 50.8 204.47 0)
 		(unit 1)
@@ -16832,160 +16665,6 @@
 			(project "fw16_oculink8i"
 				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
 					(reference "#PWR029")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 369.57 22.86 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "7ce01c39-33f0-4d82-a12f-eb05b97dc62a")
-		(property "Reference" "#PWR033"
-			(at 369.57 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 368.3 19.05 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 369.57 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 369.57 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 369.57 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "78b43b2f-48ac-45b2-a1d8-fe14d31a5f5f")
-		)
-		(instances
-			(project "fw16_oculink8i"
-				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
-					(reference "#PWR033")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 379.73 22.86 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8186268b-8c63-44b8-a913-b7e81c6d043b")
-		(property "Reference" "#PWR035"
-			(at 379.73 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 378.206 19.05 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 379.73 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 379.73 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 379.73 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7eb9262c-8db6-45fc-995e-927b0b07ddd6")
-		)
-		(instances
-			(project "fw16_oculink8i"
-				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
-					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -17238,83 +16917,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+12V")
-		(at 389.89 22.86 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8b4fa3ed-030f-44ff-bd8c-99bc83cbc7ed")
-		(property "Reference" "#PWR036"
-			(at 389.89 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+12V"
-			(at 388.62 19.05 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 389.89 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 389.89 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 389.89 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "494726fc-4208-4ed8-9b07-6bbdeb028f53")
-		)
-		(instances
-			(project "fw16_oculink8i"
-				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
-					(reference "#PWR036")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 138.43 246.38 90)
 		(mirror x)
@@ -17395,83 +16997,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 377.19 22.86 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8dd0ae48-521c-4b89-ab1e-6ae1bdbfa6dd")
-		(property "Reference" "#FLG02"
-			(at 377.19 20.955 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 378.968 16.764 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 377.19 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 377.19 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 377.19 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e2a1f13f-e6f0-44df-b36a-867e78f8d9a6")
-		)
-		(instances
-			(project "fw16_oculink8i"
-				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
-					(reference "#FLG02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Switch:SW_DPDT_x2")
 		(at 153.67 201.93 180)
 		(unit 2)
@@ -17482,7 +17007,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8f16cf16-9d18-4359-8e35-f87656178309")
-		(property "Reference" "SW3"
+		(property "Reference" "SW2"
 			(at 153.67 197.104 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17556,7 +17081,7 @@
 		(instances
 			(project "fw16_oculink8i"
 				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
-					(reference "SW3")
+					(reference "SW2")
 					(unit 2)
 				)
 			)
@@ -17573,7 +17098,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "92d66b35-2fe4-4827-9918-254f116a014d")
-		(property "Reference" "SW3"
+		(property "Reference" "SW2"
 			(at 153.67 184.404 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17647,7 +17172,7 @@
 		(instances
 			(project "fw16_oculink8i"
 				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
-					(reference "SW3")
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -17887,7 +17412,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 386.08 45.72 0)
+		(at 386.08 31.75 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17897,7 +17422,7 @@
 		(dnp no)
 		(uuid "9cc47a8b-8f67-4a12-a0ca-60259cb6faa0")
 		(property "Reference" "H4"
-			(at 384.81 41.656 0)
+			(at 384.81 27.686 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17908,7 +17433,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 388.62 45.7199 0)
+			(at 388.62 31.7499 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17920,7 +17445,7 @@
 			)
 		)
 		(property "Footprint" "Expansion_Bay:MountingHole_6.2mm_EasySolder_Cut"
-			(at 386.08 45.72 0)
+			(at 386.08 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17931,7 +17456,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 386.08 45.72 0)
+			(at 386.08 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17942,7 +17467,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 386.08 45.72 0)
+			(at 386.08 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18292,7 +17817,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 370.84 45.72 0)
+		(at 370.84 31.75 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18302,7 +17827,7 @@
 		(dnp no)
 		(uuid "ad8996a5-c3fa-4382-bc5e-bba4206149a8")
 		(property "Reference" "H1"
-			(at 369.824 41.402 0)
+			(at 369.824 27.432 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18313,7 +17838,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 373.38 45.7199 0)
+			(at 373.38 31.7499 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18325,7 +17850,7 @@
 			)
 		)
 		(property "Footprint" "Expansion_Bay:MountingHole_6.2mm_EasySolder_Cut"
-			(at 370.84 45.72 0)
+			(at 370.84 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18336,7 +17861,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 370.84 45.72 0)
+			(at 370.84 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18347,7 +17872,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 370.84 45.72 0)
+			(at 370.84 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18912,7 +18437,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C2061284.pdf"
+		(property "Datasheet" "https://www.onsemi.cn/PowerSolutions/document/CAT24C256-D.PDF"
 			(at 50.8 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -18923,7 +18448,7 @@
 				)
 			)
 		)
-		(property "Description" "32Kbit 400kHz I2C TSSOP-8 EEPROM ROHS"
+		(property "Description" "256 kb CMOS Serial EEPROM, DIP-8/SOIC-8/TSSOP-8/DFN-8"
 			(at 50.8 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -18969,7 +18494,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 375.92 45.72 0)
+		(at 375.92 31.75 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18979,7 +18504,7 @@
 		(dnp no)
 		(uuid "c44ef126-6cb2-495c-a6e4-ab066372356a")
 		(property "Reference" "H2"
-			(at 374.65 41.656 0)
+			(at 374.65 27.686 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18990,7 +18515,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 378.46 45.7199 0)
+			(at 378.46 31.7499 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19002,7 +18527,7 @@
 			)
 		)
 		(property "Footprint" "Expansion_Bay:MountingHole_6.2mm_EasySolder_Cut"
-			(at 375.92 45.72 0)
+			(at 375.92 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19013,7 +18538,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 375.92 45.72 0)
+			(at 375.92 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19024,7 +18549,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 375.92 45.72 0)
+			(at 375.92 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19875,7 +19400,7 @@
 				)
 			)
 		)
-		(pin "5"
+		(pin "SH"
 			(uuid "8de53345-dd93-4232-8a6d-3abaeab220e4")
 		)
 		(pin "4"
@@ -20473,83 +19998,6 @@
 			(project "fw16_oculink8i"
 				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
 					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 367.03 22.86 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "efb6d559-cf12-4de8-8d12-04e3daa765d8")
-		(property "Reference" "#FLG01"
-			(at 367.03 20.955 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 368.808 16.764 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 367.03 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 367.03 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 367.03 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c0568247-77f6-4c4f-ac3f-c4648140235d")
-		)
-		(instances
-			(project "fw16_oculink8i"
-				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
-					(reference "#FLG01")
 					(unit 1)
 				)
 			)
