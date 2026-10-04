@@ -78,14 +78,6 @@
       ],
       "drc_exclusions": [
         [
-          "hole_clearance|121802200|27206367|07d185b7-5e5e-4780-8c33-394bad52484c|9cb2d8f8-fc33-4808-8a37-3474e55fee68",
-          ""
-        ],
-        [
-          "hole_clearance|141302200|27206367|62a2b96b-179d-49b0-b672-02368a282a73|4f243199-54bc-40a4-a687-3fe16883526f",
-          ""
-        ],
-        [
           "lib_footprint_mismatch|107862214|91231826|616cb28d-7629-4883-a012-2080cb0d3649|00000000-0000-0000-0000-000000000000",
           "Removed a few unneeded pads for clearance"
         ]
@@ -779,7 +771,7 @@
         "uuid": "50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
       }
     ],
-    "used_designators": "H1-4,U1-2,U4,R1-21,R25,R27,R35,JP1,#PWR1-37,D1-40,C1-2,C5,SW1-4,J1-5,J7,#FLG1-4",
+    "used_designators": "#FLG1-4,J1-5,J7,SW1-4,C1-2,C5,D1-40,#PWR1-37,JP1,R1-21,R25,R27,R35,U1-2,U4,H1-4",
     "variants": []
   },
   "sheets": [

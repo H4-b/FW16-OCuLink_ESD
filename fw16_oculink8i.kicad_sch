@@ -7874,12 +7874,6 @@
 		(uuid "71f1249b-bc3d-451f-a2c2-808c260d8769")
 	)
 	(junction
-		(at 375.92 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "721a2d9b-e0a5-44a4-adf0-522c08f7a1d5")
-	)
-	(junction
 		(at 378.46 189.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8268,12 +8262,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fcbbff9d-31f0-4204-8b41-3067a3eb4cab")
-	)
-	(junction
-		(at 381 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fd43eaf4-c753-4c2b-9017-f028471a56d2")
 	)
 	(junction
 		(at 45.72 255.27)
@@ -9210,16 +9198,6 @@
 			(type default)
 		)
 		(uuid "1ce5680f-b556-42bc-a6f0-20b095dad34e")
-	)
-	(wire
-		(pts
-			(xy 381 34.29) (xy 381 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d5ff2f7-ad04-4678-b9f8-c3aa51dca3f2")
 	)
 	(wire
 		(pts
@@ -10323,16 +10301,6 @@
 	)
 	(wire
 		(pts
-			(xy 375.92 36.83) (xy 381 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5634f452-be85-440a-991c-badd4c109ade")
-	)
-	(wire
-		(pts
 			(xy 120.65 251.46) (xy 120.65 248.92)
 		)
 		(stroke
@@ -10610,16 +10578,6 @@
 			(type default)
 		)
 		(uuid "620c6458-a591-4324-8838-a05a853c9723")
-	)
-	(wire
-		(pts
-			(xy 381 36.83) (xy 386.08 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "627a7802-190f-4353-b8d2-5befef6b3cab")
 	)
 	(wire
 		(pts
@@ -12730,16 +12688,6 @@
 			(type default)
 		)
 		(uuid "d11f4dd4-aa2c-4336-82e7-110c23b8de31")
-	)
-	(wire
-		(pts
-			(xy 386.08 34.29) (xy 386.08 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d178ba52-d184-459d-8e8d-a6f660ef4be6")
 	)
 	(wire
 		(pts
@@ -19089,85 +19037,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 381 31.75 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "609e173d-6716-4c43-a43a-1be0b75bbd10")
-		(property "Reference" "H3"
-			(at 379.73 27.432 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 383.54 31.7499 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Expansion_Bay:MountingHole_6.2mm_EasySolder_Cut"
-			(at 381 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 381 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 381 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "998f354e-58d9-474d-a8d0-c8d2c662a8af")
-		)
-		(instances
-			(project "fw16_oculink8i"
-				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
-					(reference "H3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+12V")
 		(at 342.9 30.48 0)
 		(unit 1)
@@ -21788,85 +21657,6 @@
 			(project "fw16_oculink8i"
 				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
 					(reference "D35")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 386.08 31.75 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9cc47a8b-8f67-4a12-a0ca-60259cb6faa0")
-		(property "Reference" "H4"
-			(at 384.81 27.686 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 388.62 31.7499 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Expansion_Bay:MountingHole_6.2mm_EasySolder_Cut"
-			(at 386.08 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 386.08 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 386.08 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "dc25d726-62a5-4d95-b7d3-708b154b15a9")
-		)
-		(instances
-			(project "fw16_oculink8i"
-				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
-					(reference "H4")
 					(unit 1)
 				)
 			)
