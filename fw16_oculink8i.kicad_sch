@@ -13780,7 +13780,7 @@
 		(uuid "34fb9dff-6353-4589-8a27-fd1150fd0dac")
 	)
 	(label "TX4-"
-		(at 102.87 66.04 0)
+		(at 102.87 63.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13850,7 +13850,7 @@
 		(uuid "43f8af9f-edf5-4dea-b4c3-7350100409e5")
 	)
 	(label "TX4+"
-		(at 102.87 63.5 0)
+		(at 102.87 66.04 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13860,7 +13860,7 @@
 		(uuid "446dcc85-0ac1-419a-8d9f-069c88d402e9")
 	)
 	(label "REFCLKB+"
-		(at 185.42 119.38 0)
+		(at 185.42 116.84 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14050,7 +14050,7 @@
 		(uuid "62c32192-a05c-4cbe-b432-94d9f3211091")
 	)
 	(label "RX2-"
-		(at 158.75 55.88 180)
+		(at 158.75 53.34 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14230,7 +14230,7 @@
 		(uuid "855acca8-f378-4895-b342-96aed25d72a5")
 	)
 	(label "REFCLKB-"
-		(at 185.42 116.84 0)
+		(at 185.42 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15030,7 +15030,7 @@
 		(uuid "f6d2fe48-cd31-476d-af07-289439bc3d52")
 	)
 	(label "RX2+"
-		(at 158.75 53.34 180)
+		(at 158.75 55.88 180)
 		(effects
 			(font
 				(size 1.27 1.27)

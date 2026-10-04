@@ -220,11 +220,11 @@
       "track_widths": [
         0.0,
         0.1,
-        0.2032,
-        0.254,
-        0.3556,
-        0.381,
-        0.5588
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -286,7 +286,43 @@
       "sch_revision": ""
     },
     "layer_pairs": [],
-    "layer_presets": [],
+    "layer_presets": [
+      {
+        "activeLayer": -2,
+        "flipBoard": false,
+        "layers": [
+          0,
+          25,
+          27,
+          31
+        ],
+        "name": "front_placement",
+        "renderLayers": [
+          "vias",
+          "footprint_text",
+          "footprint_anchors",
+          "ratsnest",
+          "grid",
+          "footprints_front",
+          "footprints_back",
+          "footprint_values",
+          "footprint_references",
+          "tracks",
+          "drc_errors",
+          "drawing_sheet",
+          "bitmaps",
+          "pads",
+          "zones",
+          "drc_warnings",
+          "drc_exclusions",
+          "locked_item_shadows",
+          "conflict_shadows",
+          "shapes",
+          "board_outline_area",
+          "ly_points"
+        ]
+      }
+    ],
     "viewports": []
   },
   "boards": [],
@@ -557,17 +593,31 @@
         "wire_width": 6
       },
       {
+        "name": "GND",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgb(194, 194, 194)",
+        "tuning_profile": ""
+      },
+      {
         "clearance": 0.1,
         "diff_pair_gap": 0.1016,
         "diff_pair_width": 0.109728,
         "name": "PCIe",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgb(0, 0, 255)",
         "track_width": 0.1,
         "tuning_profile": "",
         "via_diameter": 0.4,
         "via_drill": 0.3
+      },
+      {
+        "name": "POWER",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgb(194, 0, 0)",
+        "tuning_profile": ""
       },
       {
         "clearance": 0.1,
@@ -575,8 +625,8 @@
         "diff_pair_width": 0.105156,
         "name": "USB2",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgb(0, 255, 0)",
         "track_width": 0.1,
         "tuning_profile": "",
         "via_diameter": 0.4,
@@ -604,6 +654,14 @@
       {
         "netclass": "USB2",
         "pattern": "/USB.*"
+      },
+      {
+        "netclass": "GND",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "POWER",
+        "pattern": "+*V*"
       }
     ]
   },
