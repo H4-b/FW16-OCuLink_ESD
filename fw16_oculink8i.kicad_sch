@@ -1055,6 +1055,196 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:D_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at -1.27 2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "D_Small"
+				(at -3.81 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Diode, small symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "D_Small_0_1"
+				(polyline
+					(pts
+						(xy -0.762 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 -1.016) (xy -0.762 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Small_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.778)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.778)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -6960,6 +7150,18 @@
 		)
 	)
 	(rectangle
+		(start 332.74 114.3)
+		(end 396.24 246.38)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "0162f20a-bc7e-430a-a93b-ae764a36c8fd")
+	)
+	(rectangle
 		(start 314.96 16.51)
 		(end 358.14 57.15)
 		(stroke
@@ -7106,6 +7308,17 @@
 		)
 		(uuid "38c7e6bd-077c-4dbd-a350-186671851608")
 	)
+	(text "All the same diodes, as putting different ones doesn't make \nsense BOM wise. It should be fine for all signals as it\nprotects +-3.6V (so okay for the 3V3 signals) It's not the\n\"best\" (I.E. specific protection for each signal) but better\nthan nothing."
+		(exclude_from_sim no)
+		(at 334.518 129.54 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6658ca19-3eb7-4cef-ad90-544147792c86")
+	)
 	(text "FXBeam"
 		(exclude_from_sim no)
 		(at 23.368 27.686 0)
@@ -7221,6 +7434,19 @@
 		)
 		(uuid "d1351418-42af-4cd9-a464-184d52c9ecbd")
 	)
+	(text "ESD protection"
+		(exclude_from_sim no)
+		(at 334.264 118.872 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "d85ab771-c4e5-45e9-a938-ca647afafa93")
+	)
 	(text "EEPROM"
 		(exclude_from_sim no)
 		(at 29.718 173.228 0)
@@ -7246,10 +7472,28 @@
 		(uuid "f38365a4-45a0-4bf0-a710-607bae81f3ce")
 	)
 	(junction
+		(at 378.46 194.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "003b02aa-e21d-4f9b-b6f3-f960218f0dbc")
+	)
+	(junction
+		(at 378.46 158.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "00a52f4d-a996-4f20-8513-d404b6b2c338")
+	)
+	(junction
 		(at 33.02 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "00d3323d-2cd3-47be-bd00-91c0e37fd377")
+	)
+	(junction
+		(at 378.46 229.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "02460eb7-78bd-47b7-ba59-813b05093fd1")
 	)
 	(junction
 		(at 87.63 59.69)
@@ -7270,6 +7514,12 @@
 		(uuid "10339233-7362-4f6c-86b7-618dd0407134")
 	)
 	(junction
+		(at 378.46 214.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1b88c91c-4383-4e16-8bbb-6952dea39a93")
+	)
+	(junction
 		(at 157.48 134.62)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7282,6 +7532,18 @@
 		(uuid "1ed46383-ff45-46a1-b4d1-97a1973e22d5")
 	)
 	(junction
+		(at 378.46 207.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1f4d4e0a-44b6-4aa4-b795-e207eb776cd6")
+	)
+	(junction
+		(at 378.46 212.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1fc063d5-c3c3-4e9d-ae92-0abc13d124c3")
+	)
+	(junction
 		(at 87.63 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7292,6 +7554,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "21f32918-b85a-42b0-9c62-f5fb6d737ea2")
+	)
+	(junction
+		(at 378.46 176.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "22c6cf84-b497-4a98-97f8-962e1b640d89")
 	)
 	(junction
 		(at 87.63 46.99)
@@ -7318,10 +7586,22 @@
 		(uuid "2804d889-37fd-46f3-b2f3-e8eb7a491a96")
 	)
 	(junction
+		(at 378.46 163.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2950f4a1-617b-4ab8-a6fe-e88dac68d033")
+	)
+	(junction
 		(at 182.88 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2af9d13b-39e6-45e5-a6ae-1d0aa83e806f")
+	)
+	(junction
+		(at 378.46 179.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2b0db22d-454e-4db4-922e-f3c0ba22904e")
 	)
 	(junction
 		(at 157.48 119.38)
@@ -7340,6 +7620,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2e950b83-b26b-4145-8e54-9f10012a79fe")
+	)
+	(junction
+		(at 378.46 186.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2f27818d-8bb1-482d-b034-03fc2d2fffd1")
 	)
 	(junction
 		(at 232.41 106.68)
@@ -7396,6 +7682,12 @@
 		(uuid "412ffe10-081a-4a3b-b014-e526fc5ccae5")
 	)
 	(junction
+		(at 378.46 173.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "41a3cd97-b573-418a-9c2d-edb0c31b58a0")
+	)
+	(junction
 		(at 157.48 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7418,6 +7710,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "47e710fa-969a-4302-8069-373fa766a755")
+	)
+	(junction
+		(at 378.46 224.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "487e6a7a-176f-4e3c-b375-0c3c41ec6b3d")
 	)
 	(junction
 		(at 73.66 265.43)
@@ -7456,6 +7754,12 @@
 		(uuid "4f1cd21b-2d67-4589-84d5-d3e355a4e17d")
 	)
 	(junction
+		(at 378.46 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "507e2905-5237-4f7b-8718-f422206f65c9")
+	)
+	(junction
 		(at 157.48 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7492,6 +7796,12 @@
 		(uuid "588157d0-9617-4f99-919f-af1d05702e25")
 	)
 	(junction
+		(at 378.46 171.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5aaf8459-e49a-4384-9689-bd43b920df0c")
+	)
+	(junction
 		(at 157.48 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7504,16 +7814,52 @@
 		(uuid "5d95b009-8961-4108-96e4-493743762561")
 	)
 	(junction
+		(at 378.46 166.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "61f07b8d-3437-4303-b179-da415f05c4cf")
+	)
+	(junction
 		(at 182.88 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "643b03e9-e4b5-459c-bda3-67e703f23594")
 	)
 	(junction
+		(at 378.46 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "64966dd9-358d-4ff4-89b7-04bdbbf0fe4b")
+	)
+	(junction
+		(at 378.46 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "65136b08-80e2-44d2-a1a3-62b7734af4db")
+	)
+	(junction
 		(at 34.29 264.16)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "67a98e1e-3473-41de-a67e-08378be87192")
+	)
+	(junction
+		(at 378.46 227.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "68a93783-4f81-4d3a-855c-c4f8af4fe205")
+	)
+	(junction
+		(at 378.46 204.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6cf8d93a-0729-49d7-9871-27c7aad5f28b")
+	)
+	(junction
+		(at 378.46 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6d4d3e37-7121-43f5-8cb2-5d0460810b73")
 	)
 	(junction
 		(at 101.6 193.04)
@@ -7534,6 +7880,12 @@
 		(uuid "721a2d9b-e0a5-44a4-adf0-522c08f7a1d5")
 	)
 	(junction
+		(at 378.46 189.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7398dc5c-c989-484c-a9e4-9a1b222b76a3")
+	)
+	(junction
 		(at 87.63 201.93)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7552,6 +7904,12 @@
 		(uuid "7685fa6e-08ae-45aa-8466-fcb4034b4145")
 	)
 	(junction
+		(at 378.46 146.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "789116fc-400d-4eff-bf8e-f2cb22cd9448")
+	)
+	(junction
 		(at 157.48 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7564,10 +7922,22 @@
 		(uuid "7aaf013c-607d-4336-88fc-33127a5d235b")
 	)
 	(junction
+		(at 378.46 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7ea3972f-38e7-4b77-85d9-b6dd7e3944d4")
+	)
+	(junction
 		(at 93.98 193.04)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "85256be0-8bf2-481c-9179-bda509f13b05")
+	)
+	(junction
+		(at 378.46 184.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "87c42b5a-d8bc-4a93-99fb-7b816de2e05f")
 	)
 	(junction
 		(at 87.63 97.79)
@@ -7600,10 +7970,22 @@
 		(uuid "904f5ee1-7bad-4556-9efd-882fe5c54450")
 	)
 	(junction
+		(at 378.46 232.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "917d0348-d6cb-47f4-b68d-824a5ab3dd35")
+	)
+	(junction
 		(at 182.88 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "91f37c38-2965-4670-9cec-cda25e5fbac0")
+	)
+	(junction
+		(at 378.46 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "91fabf19-b4f1-4280-8528-221417271fb2")
 	)
 	(junction
 		(at 232.41 83.82)
@@ -7636,10 +8018,22 @@
 		(uuid "9a17130f-801a-4370-b73a-6f026f0d8015")
 	)
 	(junction
+		(at 378.46 222.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9e6f5a56-e15a-47ac-b74a-42addc989076")
+	)
+	(junction
 		(at 87.63 184.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a000232e-b711-44fa-b520-1edea27e26cb")
+	)
+	(junction
+		(at 378.46 181.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a01bf0cc-c293-4330-8fe9-4ce79a2b0dde")
 	)
 	(junction
 		(at 81.28 193.04)
@@ -7648,10 +8042,22 @@
 		(uuid "a1526366-666a-493e-842b-344cdcdaca24")
 	)
 	(junction
+		(at 378.46 191.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a47082d2-df42-403b-aca3-a141f1c3747f")
+	)
+	(junction
 		(at 232.41 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a577fa95-43c4-49e9-bfb9-4a8984f2f583")
+	)
+	(junction
+		(at 378.46 219.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a6b0810f-9952-4090-bcea-761ef7c17eaf")
 	)
 	(junction
 		(at 73.66 245.11)
@@ -7660,10 +8066,22 @@
 		(uuid "ab307da2-cc32-4c7e-9a47-0f6d7ba6b5cb")
 	)
 	(junction
+		(at 378.46 199.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "af1e4425-07f1-4c37-91af-9f3c96ead91c")
+	)
+	(junction
 		(at 87.63 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "affc2e62-0eef-4bfb-87f1-a6e9d6da1531")
+	)
+	(junction
+		(at 378.46 196.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b4a39ffa-49af-467b-acad-6071e51dfd8a")
 	)
 	(junction
 		(at 157.48 99.06)
@@ -7708,6 +8126,12 @@
 		(uuid "cb789b6b-fac9-448b-9dd3-2e2ad41b9d9a")
 	)
 	(junction
+		(at 378.46 234.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d1e8fc9a-87e5-4faa-8c3a-68096b46c391")
+	)
+	(junction
 		(at 232.41 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7750,10 +8174,28 @@
 		(uuid "e1ef4188-1e86-44c8-9fed-7984f54da547")
 	)
 	(junction
+		(at 378.46 201.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e34f870c-c776-49c3-9206-d8a2608f7f83")
+	)
+	(junction
 		(at 81.28 184.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e73bbeed-76d0-4001-a4b6-c55b3e1a05f2")
+	)
+	(junction
+		(at 378.46 151.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e8ee4197-6aeb-46df-814b-40261c6e47eb")
+	)
+	(junction
+		(at 378.46 156.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e91a374e-a7a8-4a34-92fa-25ece56da395")
 	)
 	(junction
 		(at 182.88 53.34)
@@ -7792,6 +8234,18 @@
 		(uuid "f69f2ad6-3421-4203-92cc-0728e4a26f52")
 	)
 	(junction
+		(at 378.46 217.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f77b6d6b-fd55-462c-aa90-705f336e14d5")
+	)
+	(junction
+		(at 378.46 168.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f7a36f67-fc6a-4194-98dc-8db5b9ab454b")
+	)
+	(junction
 		(at 81.28 201.93)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7808,6 +8262,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fc735052-b84a-437b-9b8e-9574f8627c32")
+	)
+	(junction
+		(at 378.46 237.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fcbbff9d-31f0-4204-8b41-3067a3eb4cab")
 	)
 	(junction
 		(at 381 36.83)
@@ -8093,6 +8553,36 @@
 	)
 	(wire
 		(pts
+			(xy 378.46 201.93) (xy 378.46 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02c1d000-52be-41d3-85f4-ca80ab7c1d66")
+	)
+	(wire
+		(pts
+			(xy 367.03 163.83) (xy 378.46 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04a61151-df3b-4005-b9f7-8f974929ae9e")
+	)
+	(wire
+		(pts
+			(xy 349.25 217.17) (xy 361.95 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "057c8687-af79-4a14-a9e8-7af358115534")
+	)
+	(wire
+		(pts
 			(xy 87.63 62.23) (xy 87.63 64.77)
 		)
 		(stroke
@@ -8113,6 +8603,16 @@
 	)
 	(wire
 		(pts
+			(xy 367.03 143.51) (xy 378.46 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06541a52-0af6-4c9a-9840-c1fe9f622076")
+	)
+	(wire
+		(pts
 			(xy 38.1 246.38) (xy 38.1 247.65)
 		)
 		(stroke
@@ -8120,6 +8620,16 @@
 			(type default)
 		)
 		(uuid "06af1999-5dfb-4a82-ac83-04b4712e0b48")
+	)
+	(wire
+		(pts
+			(xy 367.03 173.99) (xy 378.46 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06dc0667-e6c0-4d33-96c2-6003bef36cf9")
 	)
 	(wire
 		(pts
@@ -8203,6 +8713,16 @@
 	)
 	(wire
 		(pts
+			(xy 378.46 232.41) (xy 378.46 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08f3724f-08c9-4458-b1e8-dcfec4c5df56")
+	)
+	(wire
+		(pts
 			(xy 220.98 121.92) (xy 232.41 121.92)
 		)
 		(stroke
@@ -8250,6 +8770,16 @@
 			(type default)
 		)
 		(uuid "0ac4e4c8-48ab-456f-94fb-049a22699105")
+	)
+	(wire
+		(pts
+			(xy 349.25 151.13) (xy 361.95 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ac9340f-2ab1-47e8-b900-2878a74b63b9")
 	)
 	(wire
 		(pts
@@ -8423,6 +8953,16 @@
 	)
 	(wire
 		(pts
+			(xy 367.03 176.53) (xy 378.46 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11d7b6d2-3786-406b-bdec-dc3b17afac51")
+	)
+	(wire
+		(pts
 			(xy 87.63 72.39) (xy 87.63 74.93)
 		)
 		(stroke
@@ -8430,6 +8970,16 @@
 			(type default)
 		)
 		(uuid "11d81385-5386-4b44-9572-da641da8ad10")
+	)
+	(wire
+		(pts
+			(xy 378.46 151.13) (xy 378.46 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "124ad0ff-d1fe-4385-8b1e-096902338f34")
 	)
 	(wire
 		(pts
@@ -8503,6 +9053,16 @@
 	)
 	(wire
 		(pts
+			(xy 378.46 146.05) (xy 378.46 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15c2063b-5c01-4205-90ff-b794d8234bbc")
+	)
+	(wire
+		(pts
 			(xy 185.42 78.74) (xy 195.58 78.74)
 		)
 		(stroke
@@ -8520,6 +9080,26 @@
 			(type default)
 		)
 		(uuid "167777ac-31f1-41e6-ae65-7361ce6e1f2d")
+	)
+	(wire
+		(pts
+			(xy 367.03 232.41) (xy 378.46 232.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16ecd9d4-865d-4de0-b988-4a5778cad6fc")
+	)
+	(wire
+		(pts
+			(xy 378.46 176.53) (xy 378.46 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17bd05a4-6c86-411c-9dce-a5a9a40362da")
 	)
 	(wire
 		(pts
@@ -8553,6 +9133,16 @@
 	)
 	(wire
 		(pts
+			(xy 367.03 204.47) (xy 378.46 204.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a2849ba-a4df-4207-bf85-763bd43697ae")
+	)
+	(wire
+		(pts
 			(xy 67.31 180.34) (xy 67.31 177.8)
 		)
 		(stroke
@@ -8560,6 +9150,16 @@
 			(type default)
 		)
 		(uuid "1aed08ed-7675-490d-a718-a2d31ee5cfcd")
+	)
+	(wire
+		(pts
+			(xy 349.25 189.23) (xy 361.95 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b02add1-b734-4120-be78-83e8ae0f94a3")
 	)
 	(wire
 		(pts
@@ -8640,6 +9240,16 @@
 			(type default)
 		)
 		(uuid "1df19c8e-321b-4069-b997-7dd72230d819")
+	)
+	(wire
+		(pts
+			(xy 349.25 201.93) (xy 361.95 201.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e58d8a8-05ec-4a47-983d-82b552bce9c5")
 	)
 	(wire
 		(pts
@@ -8753,6 +9363,16 @@
 	)
 	(wire
 		(pts
+			(xy 349.25 166.37) (xy 361.95 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2348256c-0a2f-498d-824b-c8caabbb506f")
+	)
+	(wire
+		(pts
 			(xy 208.28 144.78) (xy 208.28 147.32)
 		)
 		(stroke
@@ -8823,6 +9443,26 @@
 	)
 	(wire
 		(pts
+			(xy 367.03 196.85) (xy 378.46 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25f47cd1-977c-41c6-8728-22ffbf3a5202")
+	)
+	(wire
+		(pts
+			(xy 378.46 171.45) (xy 378.46 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2716461f-bab2-487a-bc36-e7c703af1483")
+	)
+	(wire
+		(pts
 			(xy 152.4 121.92) (xy 157.48 121.92)
 		)
 		(stroke
@@ -8830,6 +9470,16 @@
 			(type default)
 		)
 		(uuid "28f27a16-deaa-44a7-a94b-4b3cec29cc31")
+	)
+	(wire
+		(pts
+			(xy 349.25 156.21) (xy 361.95 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ab751be-fb97-41c4-9a40-6efea4720d34")
 	)
 	(wire
 		(pts
@@ -8883,6 +9533,46 @@
 	)
 	(wire
 		(pts
+			(xy 367.03 168.91) (xy 378.46 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d5350d8-f393-406c-b111-c5569c0880cd")
+	)
+	(wire
+		(pts
+			(xy 349.25 181.61) (xy 361.95 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2db05564-68ad-4d19-ba58-e71f4ac5c5a8")
+	)
+	(wire
+		(pts
+			(xy 367.03 237.49) (xy 378.46 237.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2dce2d3c-7f15-4ac5-84db-63d3ad7cb0a7")
+	)
+	(wire
+		(pts
+			(xy 349.25 214.63) (xy 361.95 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e0fac96-d83b-4bd9-8636-1302e1b3c09e")
+	)
+	(wire
+		(pts
 			(xy 232.41 91.44) (xy 232.41 99.06)
 		)
 		(stroke
@@ -8910,6 +9600,16 @@
 			(type default)
 		)
 		(uuid "2f88d9ec-0ed0-4c19-9352-cf4ea1b82c85")
+	)
+	(wire
+		(pts
+			(xy 378.46 184.15) (xy 378.46 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f8e28bd-50dc-460b-a811-aa5778a36da8")
 	)
 	(wire
 		(pts
@@ -8963,6 +9663,16 @@
 	)
 	(wire
 		(pts
+			(xy 349.25 234.95) (xy 361.95 234.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32cd3e07-1b68-43e4-9bb1-59a35d873337")
+	)
+	(wire
+		(pts
 			(xy 111.76 43.18) (xy 102.87 43.18)
 		)
 		(stroke
@@ -8973,6 +9683,16 @@
 	)
 	(wire
 		(pts
+			(xy 378.46 207.01) (xy 378.46 204.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33792bb2-5ba5-46b4-ab3c-40497a8253f5")
+	)
+	(wire
+		(pts
 			(xy 30.48 193.04) (xy 30.48 195.58)
 		)
 		(stroke
@@ -8980,6 +9700,16 @@
 			(type default)
 		)
 		(uuid "3416be62-308b-4e85-9001-e0c5ed9a2af4")
+	)
+	(wire
+		(pts
+			(xy 378.46 199.39) (xy 378.46 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34e8de9e-25b4-4f10-b4df-491c14f2c812")
 	)
 	(wire
 		(pts
@@ -9033,6 +9763,16 @@
 	)
 	(wire
 		(pts
+			(xy 367.03 209.55) (xy 378.46 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37b521e9-7634-4f1c-8d60-07e6144111ee")
+	)
+	(wire
+		(pts
 			(xy 157.48 96.52) (xy 157.48 99.06)
 		)
 		(stroke
@@ -9050,6 +9790,16 @@
 			(type default)
 		)
 		(uuid "38643103-8120-4317-ab8c-030218f9b29b")
+	)
+	(wire
+		(pts
+			(xy 367.03 207.01) (xy 378.46 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3876a7d3-8a9f-4bb8-89cf-768289311e46")
 	)
 	(wire
 		(pts
@@ -9080,6 +9830,16 @@
 			(type default)
 		)
 		(uuid "3a677e9d-4152-447d-87e3-444a92d87fe9")
+	)
+	(wire
+		(pts
+			(xy 378.46 166.37) (xy 378.46 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ad3dbbe-23f6-4590-8b8f-dd89a1a9b18e")
 	)
 	(wire
 		(pts
@@ -9123,6 +9883,16 @@
 	)
 	(wire
 		(pts
+			(xy 349.25 179.07) (xy 361.95 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f72c356-a5ec-4c89-852e-cd4080da5ba8")
+	)
+	(wire
+		(pts
 			(xy 76.2 137.16) (xy 85.09 137.16)
 		)
 		(stroke
@@ -9130,6 +9900,16 @@
 			(type default)
 		)
 		(uuid "3facfc82-cba6-47b6-a2d3-92bc0725bd7e")
+	)
+	(wire
+		(pts
+			(xy 367.03 194.31) (xy 378.46 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ffe5bda-da2d-4e1a-8b00-a5360322ddaa")
 	)
 	(wire
 		(pts
@@ -9150,6 +9930,16 @@
 			(type default)
 		)
 		(uuid "40c7da72-e0f9-4540-b489-764979df2b9e")
+	)
+	(wire
+		(pts
+			(xy 349.25 163.83) (xy 361.95 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40d392b3-24d6-4d7b-be47-ec169bff71c1")
 	)
 	(wire
 		(pts
@@ -9230,6 +10020,16 @@
 			(type default)
 		)
 		(uuid "464a2e8b-2fd0-435e-b3e5-35a198bba7a7")
+	)
+	(wire
+		(pts
+			(xy 349.25 146.05) (xy 361.95 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46d508bb-ba8c-4e43-8adc-5e5aa5d0e480")
 	)
 	(wire
 		(pts
@@ -9333,6 +10133,16 @@
 	)
 	(wire
 		(pts
+			(xy 367.03 214.63) (xy 378.46 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c618a16-0151-4c65-8682-415f7abbe9e0")
+	)
+	(wire
+		(pts
 			(xy 152.4 48.26) (xy 158.75 48.26)
 		)
 		(stroke
@@ -9413,6 +10223,16 @@
 	)
 	(wire
 		(pts
+			(xy 367.03 156.21) (xy 378.46 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50bb992f-a472-4f18-9b78-4e868a37d334")
+	)
+	(wire
+		(pts
 			(xy 38.1 264.16) (xy 34.29 264.16)
 		)
 		(stroke
@@ -9443,6 +10263,16 @@
 	)
 	(wire
 		(pts
+			(xy 367.03 181.61) (xy 378.46 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54064429-7daf-4432-be2f-7da6c580635a")
+	)
+	(wire
+		(pts
 			(xy 138.43 191.77) (xy 148.59 191.77)
 		)
 		(stroke
@@ -9470,6 +10300,16 @@
 			(type default)
 		)
 		(uuid "55655b68-dc50-4453-a2ec-89b387b8e833")
+	)
+	(wire
+		(pts
+			(xy 349.25 138.43) (xy 361.95 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "556df45c-ec46-428a-bbdf-1ccbcb3b2f31")
 	)
 	(wire
 		(pts
@@ -9523,6 +10363,16 @@
 	)
 	(wire
 		(pts
+			(xy 367.03 222.25) (xy 378.46 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5700a1fb-d215-41e4-8cbe-f28657d9dbc8")
+	)
+	(wire
+		(pts
 			(xy 93.98 193.04) (xy 97.79 193.04)
 		)
 		(stroke
@@ -9530,6 +10380,16 @@
 			(type default)
 		)
 		(uuid "581da441-ad17-4853-9dff-da79d508e963")
+	)
+	(wire
+		(pts
+			(xy 367.03 227.33) (xy 378.46 227.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5893fd19-5b0a-4bf9-a522-0e4c516cd367")
 	)
 	(wire
 		(pts
@@ -9553,6 +10413,16 @@
 	)
 	(wire
 		(pts
+			(xy 349.25 199.39) (xy 361.95 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59dcc016-f561-4d43-8314-96212ec9e272")
+	)
+	(wire
+		(pts
 			(xy 220.98 78.74) (xy 229.87 78.74)
 		)
 		(stroke
@@ -9570,6 +10440,36 @@
 			(type default)
 		)
 		(uuid "5b6eebdd-eb98-45d2-a632-4f1dbfb20c71")
+	)
+	(wire
+		(pts
+			(xy 367.03 146.05) (xy 378.46 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b83154f-a421-472a-a212-c579587537be")
+	)
+	(wire
+		(pts
+			(xy 378.46 219.71) (xy 378.46 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d68b5b8-86d5-4cd4-bba9-2fd6794f2fdb")
+	)
+	(wire
+		(pts
+			(xy 378.46 153.67) (xy 378.46 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5db2237c-b4b6-416e-8e88-a67f576a2cb6")
 	)
 	(wire
 		(pts
@@ -9633,6 +10533,16 @@
 	)
 	(wire
 		(pts
+			(xy 378.46 209.55) (xy 378.46 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f9659b7-e086-4a24-8c98-3cf380c2febf")
+	)
+	(wire
+		(pts
 			(xy 290.83 50.8) (xy 293.37 50.8)
 		)
 		(stroke
@@ -9643,6 +10553,16 @@
 	)
 	(wire
 		(pts
+			(xy 349.25 207.01) (xy 361.95 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ff85dd2-a7e0-4b3a-9311-ea931ee775a9")
+	)
+	(wire
+		(pts
 			(xy 101.6 182.88) (xy 101.6 185.42)
 		)
 		(stroke
@@ -9650,6 +10570,16 @@
 			(type default)
 		)
 		(uuid "6083638d-717d-4476-91b9-e0f442ea9cef")
+	)
+	(wire
+		(pts
+			(xy 378.46 161.29) (xy 378.46 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60a5ad6f-6fd5-409a-a325-83e772234e35")
 	)
 	(wire
 		(pts
@@ -9753,6 +10683,26 @@
 	)
 	(wire
 		(pts
+			(xy 349.25 140.97) (xy 361.95 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6580517a-0965-497b-8c69-a123597134f9")
+	)
+	(wire
+		(pts
+			(xy 349.25 158.75) (xy 361.95 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6665372d-7c23-4af8-8b20-e5b31d3fe290")
+	)
+	(wire
+		(pts
 			(xy 76.2 41.91) (xy 87.63 41.91)
 		)
 		(stroke
@@ -9770,6 +10720,16 @@
 			(type default)
 		)
 		(uuid "67bccdb0-8964-4f11-a97e-ae59ca1bb713")
+	)
+	(wire
+		(pts
+			(xy 367.03 199.39) (xy 378.46 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67c054ef-8ddc-4ee7-85f9-1fac49c5aea8")
 	)
 	(wire
 		(pts
@@ -9793,6 +10753,26 @@
 	)
 	(wire
 		(pts
+			(xy 349.25 161.29) (xy 361.95 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68ef9a1e-62a9-4e71-842e-624b677aa099")
+	)
+	(wire
+		(pts
+			(xy 378.46 138.43) (xy 367.03 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "690766f2-72f6-4c17-95d4-40fba5157e3a")
+	)
+	(wire
+		(pts
 			(xy 87.63 46.99) (xy 87.63 49.53)
 		)
 		(stroke
@@ -9810,6 +10790,36 @@
 			(type default)
 		)
 		(uuid "6a73a211-66f2-455f-8bda-3e03c5e5a2d1")
+	)
+	(wire
+		(pts
+			(xy 349.25 173.99) (xy 361.95 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a99b6af-f230-4ede-926f-1047df180447")
+	)
+	(wire
+		(pts
+			(xy 367.03 179.07) (xy 378.46 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6afe6795-a0fc-4002-a7e9-3110f11b7ffe")
+	)
+	(wire
+		(pts
+			(xy 349.25 237.49) (xy 361.95 237.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b19ce93-1d6d-4f96-9956-4963b3f7a526")
 	)
 	(wire
 		(pts
@@ -9853,6 +10863,16 @@
 	)
 	(wire
 		(pts
+			(xy 378.46 217.17) (xy 378.46 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e6c581d-30ac-4662-93e1-b7ebebaa27f2")
+	)
+	(wire
+		(pts
 			(xy 87.63 44.45) (xy 87.63 46.99)
 		)
 		(stroke
@@ -9860,6 +10880,16 @@
 			(type default)
 		)
 		(uuid "6ed4a53c-352d-4143-9831-452ad8119ecc")
+	)
+	(wire
+		(pts
+			(xy 378.46 214.63) (xy 378.46 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70267c28-cd16-4770-8e3d-4a17957acfd9")
 	)
 	(wire
 		(pts
@@ -9923,6 +10953,16 @@
 	)
 	(wire
 		(pts
+			(xy 367.03 229.87) (xy 378.46 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75716219-0402-4f66-b095-eed1f74b1e7a")
+	)
+	(wire
+		(pts
 			(xy 154.94 151.13) (xy 157.48 151.13)
 		)
 		(stroke
@@ -9933,6 +10973,16 @@
 	)
 	(wire
 		(pts
+			(xy 349.25 186.69) (xy 361.95 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7668aa9d-db78-4fec-963c-8dd4b9fba967")
+	)
+	(wire
+		(pts
 			(xy 232.41 76.2) (xy 232.41 83.82)
 		)
 		(stroke
@@ -9940,6 +10990,16 @@
 			(type default)
 		)
 		(uuid "7679643c-f95c-48f9-88f9-53febac046ba")
+	)
+	(wire
+		(pts
+			(xy 378.46 156.21) (xy 378.46 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "770ee560-31b1-4dca-b84c-9e157119547a")
 	)
 	(wire
 		(pts
@@ -9990,6 +11050,26 @@
 			(type default)
 		)
 		(uuid "7a3d3a71-77f6-4392-a3b3-578d2ad96285")
+	)
+	(wire
+		(pts
+			(xy 349.25 224.79) (xy 361.95 224.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ae506b1-2051-470d-b9bd-ef7a0abd8555")
+	)
+	(wire
+		(pts
+			(xy 367.03 189.23) (xy 378.46 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b5571c1-a828-4dd3-88ef-27107d28b7c9")
 	)
 	(wire
 		(pts
@@ -10053,6 +11133,16 @@
 	)
 	(wire
 		(pts
+			(xy 367.03 153.67) (xy 378.46 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d69dd2a-8ee2-4db1-abe3-5290b177083b")
+	)
+	(wire
+		(pts
 			(xy 101.6 200.66) (xy 101.6 203.2)
 		)
 		(stroke
@@ -10090,6 +11180,16 @@
 			(type default)
 		)
 		(uuid "7ed2effe-5f60-4527-b181-ff49ce28e916")
+	)
+	(wire
+		(pts
+			(xy 367.03 201.93) (xy 378.46 201.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80e37502-0cb6-4d53-8a89-98741cd2ff3b")
 	)
 	(wire
 		(pts
@@ -10183,6 +11283,26 @@
 	)
 	(wire
 		(pts
+			(xy 367.03 186.69) (xy 378.46 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85a0f5fa-734b-4817-8ffa-76aef0187a69")
+	)
+	(wire
+		(pts
+			(xy 378.46 229.87) (xy 378.46 227.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85cd2069-2984-4350-8a12-f2473e124c9b")
+	)
+	(wire
+		(pts
 			(xy 111.76 71.12) (xy 102.87 71.12)
 		)
 		(stroke
@@ -10213,6 +11333,26 @@
 	)
 	(wire
 		(pts
+			(xy 349.25 171.45) (xy 361.95 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86ed30d0-65fd-44ea-9e5d-1335582a97e0")
+	)
+	(wire
+		(pts
+			(xy 367.03 217.17) (xy 378.46 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88a98b62-c65d-41d0-951c-78e459f7e945")
+	)
+	(wire
+		(pts
 			(xy 220.98 68.58) (xy 232.41 68.58)
 		)
 		(stroke
@@ -10220,6 +11360,16 @@
 			(type default)
 		)
 		(uuid "893fc710-2bf7-4abd-9cb4-c6eb0f13e579")
+	)
+	(wire
+		(pts
+			(xy 349.25 153.67) (xy 361.95 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89704fab-fa85-4c72-8b5e-c2c9ea6da5ff")
 	)
 	(wire
 		(pts
@@ -10363,6 +11513,26 @@
 	)
 	(wire
 		(pts
+			(xy 367.03 158.75) (xy 378.46 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8de9febf-5ab2-4503-a365-2c86fae30e08")
+	)
+	(wire
+		(pts
+			(xy 349.25 194.31) (xy 361.95 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e8fc52c-9cc4-418d-99dc-2ba25c82d9d2")
+	)
+	(wire
+		(pts
 			(xy 35.56 118.11) (xy 33.02 118.11)
 		)
 		(stroke
@@ -10373,6 +11543,16 @@
 	)
 	(wire
 		(pts
+			(xy 378.46 191.77) (xy 378.46 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "912dbdc1-a68a-41cc-95c3-0c02a03399fe")
+	)
+	(wire
+		(pts
 			(xy 66.04 250.19) (xy 76.2 250.19)
 		)
 		(stroke
@@ -10380,6 +11560,26 @@
 			(type default)
 		)
 		(uuid "915301fc-10d7-431d-bd40-0a7454c56a66")
+	)
+	(wire
+		(pts
+			(xy 378.46 196.85) (xy 378.46 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91d0e1d2-46a6-444c-9c83-689a54a3024a")
+	)
+	(wire
+		(pts
+			(xy 349.25 143.51) (xy 361.95 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "921177d9-f320-45fb-bc3b-ee7bde57c500")
 	)
 	(wire
 		(pts
@@ -10403,6 +11603,16 @@
 	)
 	(wire
 		(pts
+			(xy 349.25 227.33) (xy 361.95 227.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93b3a331-f078-4bdb-bbb1-be3ddbd9adff")
+	)
+	(wire
+		(pts
 			(xy 57.15 265.43) (xy 66.04 265.43)
 		)
 		(stroke
@@ -10410,6 +11620,16 @@
 			(type default)
 		)
 		(uuid "9530bf3f-5f69-4c37-aa79-ed0c904111ec")
+	)
+	(wire
+		(pts
+			(xy 367.03 140.97) (xy 378.46 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95462ec0-52d8-48d8-8013-d63f88ff10b8")
 	)
 	(wire
 		(pts
@@ -10463,6 +11683,26 @@
 	)
 	(wire
 		(pts
+			(xy 349.25 209.55) (xy 361.95 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "982ef5d0-d078-4b11-800f-affed441a858")
+	)
+	(wire
+		(pts
+			(xy 367.03 212.09) (xy 378.46 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99021fd8-fbb2-4859-99f0-ac59edf36bb0")
+	)
+	(wire
+		(pts
 			(xy 152.4 68.58) (xy 158.75 68.58)
 		)
 		(stroke
@@ -10470,6 +11710,16 @@
 			(type default)
 		)
 		(uuid "9913283a-0738-41b6-be30-da62d10051a1")
+	)
+	(wire
+		(pts
+			(xy 349.25 204.47) (xy 361.95 204.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99bd7076-b208-456f-9e96-5e6771bb8742")
 	)
 	(wire
 		(pts
@@ -10513,6 +11763,16 @@
 	)
 	(wire
 		(pts
+			(xy 349.25 219.71) (xy 361.95 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cfa0703-67de-4ceb-bc3b-d029109c2a1d")
+	)
+	(wire
+		(pts
 			(xy 220.98 93.98) (xy 229.87 93.98)
 		)
 		(stroke
@@ -10520,6 +11780,16 @@
 			(type default)
 		)
 		(uuid "9d289cd3-9f04-4aa6-a779-751e729b333d")
+	)
+	(wire
+		(pts
+			(xy 378.46 173.99) (xy 378.46 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e099082-cd52-4449-a97c-f0732bd168bc")
 	)
 	(wire
 		(pts
@@ -10560,6 +11830,16 @@
 			(type default)
 		)
 		(uuid "a1f67a01-e6c1-4ac3-aae0-4c73ca1e115b")
+	)
+	(wire
+		(pts
+			(xy 378.46 181.61) (xy 378.46 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a21ba1eb-ad1a-4154-b0f2-b81bfe558e43")
 	)
 	(wire
 		(pts
@@ -10683,6 +11963,16 @@
 	)
 	(wire
 		(pts
+			(xy 349.25 176.53) (xy 361.95 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aba9e2e9-106b-4b78-b636-03930a9b48a0")
+	)
+	(wire
+		(pts
 			(xy 232.41 53.34) (xy 232.41 60.96)
 		)
 		(stroke
@@ -10783,6 +12073,16 @@
 	)
 	(wire
 		(pts
+			(xy 378.46 168.91) (xy 378.46 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afd818fb-de98-496f-8f57-32bd617cb6b2")
+	)
+	(wire
+		(pts
 			(xy 185.42 63.5) (xy 195.58 63.5)
 		)
 		(stroke
@@ -10803,6 +12103,26 @@
 	)
 	(wire
 		(pts
+			(xy 349.25 196.85) (xy 361.95 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0e88f6d-0a2b-40d3-ad78-6446e9348de6")
+	)
+	(wire
+		(pts
+			(xy 378.46 204.47) (xy 378.46 201.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b12b1eaa-badc-4f6e-9476-48835c997172")
+	)
+	(wire
+		(pts
 			(xy 220.98 96.52) (xy 229.87 96.52)
 		)
 		(stroke
@@ -10820,6 +12140,16 @@
 			(type default)
 		)
 		(uuid "b19a540e-b288-4792-a2cc-2d66cd1287a6")
+	)
+	(wire
+		(pts
+			(xy 378.46 194.31) (xy 378.46 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1f9ae05-6ce0-4c74-925e-495719008091")
 	)
 	(wire
 		(pts
@@ -10853,6 +12183,16 @@
 	)
 	(wire
 		(pts
+			(xy 378.46 143.51) (xy 378.46 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b789083b-9d77-45f0-a4cf-1c021b0808d0")
+	)
+	(wire
+		(pts
 			(xy 345.44 33.02) (xy 342.9 33.02)
 		)
 		(stroke
@@ -10880,6 +12220,36 @@
 			(type default)
 		)
 		(uuid "b8f35f94-800d-4384-826f-51f5cb9542ac")
+	)
+	(wire
+		(pts
+			(xy 349.25 191.77) (xy 361.95 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9524d17-84b3-4c70-8e29-7f7865b4ff85")
+	)
+	(wire
+		(pts
+			(xy 367.03 224.79) (xy 378.46 224.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b980c2ca-6a08-423a-b18b-339789e03d34")
+	)
+	(wire
+		(pts
+			(xy 378.46 186.69) (xy 378.46 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9a55676-fd67-47c5-add6-d5892525070f")
 	)
 	(wire
 		(pts
@@ -10923,6 +12293,16 @@
 	)
 	(wire
 		(pts
+			(xy 349.25 222.25) (xy 361.95 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcccfa67-e86f-4012-bbe3-bbd33c0ae41b")
+	)
+	(wire
+		(pts
 			(xy 38.1 262.89) (xy 38.1 264.16)
 		)
 		(stroke
@@ -10940,6 +12320,16 @@
 			(type default)
 		)
 		(uuid "bdfbcbd0-7ec8-4516-a254-d4414b281fd1")
+	)
+	(wire
+		(pts
+			(xy 349.25 232.41) (xy 361.95 232.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bedfa33b-b8d7-464d-b6c1-e97b185feaf2")
 	)
 	(wire
 		(pts
@@ -10963,6 +12353,16 @@
 	)
 	(wire
 		(pts
+			(xy 378.46 237.49) (xy 378.46 234.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c06d74c4-6036-405d-9f23-afe5c455d4c3")
+	)
+	(wire
+		(pts
 			(xy 185.42 43.18) (xy 195.58 43.18)
 		)
 		(stroke
@@ -10980,6 +12380,26 @@
 			(type default)
 		)
 		(uuid "c0e449a3-dd65-4ec8-9610-dea64836259a")
+	)
+	(wire
+		(pts
+			(xy 349.25 229.87) (xy 361.95 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c28377b5-26b2-458a-87b1-36938271a808")
+	)
+	(wire
+		(pts
+			(xy 378.46 140.97) (xy 378.46 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2fa7539-4154-4af9-8675-5c6eba17051c")
 	)
 	(wire
 		(pts
@@ -11073,6 +12493,16 @@
 	)
 	(wire
 		(pts
+			(xy 378.46 227.33) (xy 378.46 224.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7748771-899c-43c8-af4d-277dee0daccd")
+	)
+	(wire
+		(pts
 			(xy 81.28 184.15) (xy 87.63 184.15)
 		)
 		(stroke
@@ -11090,6 +12520,16 @@
 			(type default)
 		)
 		(uuid "c7b4c5e4-b6cf-4c69-ac38-f12608622f0e")
+	)
+	(wire
+		(pts
+			(xy 367.03 191.77) (xy 378.46 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7c77478-231b-400e-a984-a4203aec310d")
 	)
 	(wire
 		(pts
@@ -11120,6 +12560,16 @@
 			(type default)
 		)
 		(uuid "cad76e3c-d55a-4886-85e0-ed13f88074b7")
+	)
+	(wire
+		(pts
+			(xy 349.25 212.09) (xy 361.95 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cadd4593-d240-4b42-93a0-313133a719e7")
 	)
 	(wire
 		(pts
@@ -11213,6 +12663,16 @@
 	)
 	(wire
 		(pts
+			(xy 367.03 234.95) (xy 378.46 234.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd9f9f4b-6897-4d57-b6b6-7f95d7354dd1")
+	)
+	(wire
+		(pts
 			(xy 120.65 248.92) (xy 123.19 248.92)
 		)
 		(stroke
@@ -11223,6 +12683,16 @@
 	)
 	(wire
 		(pts
+			(xy 378.46 179.07) (xy 378.46 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ceee83e1-a7a4-4896-b682-4917df482f42")
+	)
+	(wire
+		(pts
 			(xy 31.75 53.34) (xy 31.75 55.88)
 		)
 		(stroke
@@ -11230,6 +12700,16 @@
 			(type default)
 		)
 		(uuid "d0256987-f6e5-4d91-af64-f12bd66de95d")
+	)
+	(wire
+		(pts
+			(xy 378.46 163.83) (xy 378.46 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d07843f5-e2f6-4180-a1b3-a0c6a0c435fb")
 	)
 	(wire
 		(pts
@@ -11303,6 +12783,16 @@
 	)
 	(wire
 		(pts
+			(xy 349.25 148.59) (xy 361.95 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d693e9d2-4fdb-4014-b871-339f9841b194")
+	)
+	(wire
+		(pts
 			(xy 76.2 92.71) (xy 87.63 92.71)
 		)
 		(stroke
@@ -11363,6 +12853,16 @@
 	)
 	(wire
 		(pts
+			(xy 378.46 158.75) (xy 378.46 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da880751-55fd-447c-acdc-ba70ae3964f9")
+	)
+	(wire
+		(pts
 			(xy 76.2 100.33) (xy 87.63 100.33)
 		)
 		(stroke
@@ -11370,6 +12870,26 @@
 			(type default)
 		)
 		(uuid "db8796da-ea6f-4787-b012-fce968637cfc")
+	)
+	(wire
+		(pts
+			(xy 378.46 148.59) (xy 378.46 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dba51e9c-f1e8-41d7-957e-55e92040242c")
+	)
+	(wire
+		(pts
+			(xy 378.46 212.09) (xy 378.46 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc0261f4-c55c-48b0-9d4b-e2aba8004177")
 	)
 	(wire
 		(pts
@@ -11383,6 +12903,16 @@
 	)
 	(wire
 		(pts
+			(xy 367.03 166.37) (xy 378.46 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc962b67-38ec-4688-8801-d823ffd6de50")
+	)
+	(wire
+		(pts
 			(xy 152.4 96.52) (xy 157.48 96.52)
 		)
 		(stroke
@@ -11390,6 +12920,26 @@
 			(type default)
 		)
 		(uuid "dd141a49-466e-4a60-a5bd-b19acbbc2ee7")
+	)
+	(wire
+		(pts
+			(xy 367.03 184.15) (xy 378.46 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd4a07cf-9876-415d-8bff-d4a09991eced")
+	)
+	(wire
+		(pts
+			(xy 367.03 151.13) (xy 378.46 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd793e82-2e72-41e7-9008-97f06aeb802b")
 	)
 	(wire
 		(pts
@@ -11423,6 +12973,16 @@
 	)
 	(wire
 		(pts
+			(xy 349.25 168.91) (xy 361.95 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e011489b-38fa-4a0f-b18e-36344e73163c")
+	)
+	(wire
+		(pts
 			(xy 71.12 265.43) (xy 76.2 265.43)
 		)
 		(stroke
@@ -11450,6 +13010,16 @@
 			(type default)
 		)
 		(uuid "e2335dc5-834a-4320-a562-f858ac3e6170")
+	)
+	(wire
+		(pts
+			(xy 367.03 161.29) (xy 378.46 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e25e827c-e0c4-4bf9-a357-ba262ac33b49")
 	)
 	(wire
 		(pts
@@ -11483,6 +13053,16 @@
 	)
 	(wire
 		(pts
+			(xy 367.03 148.59) (xy 378.46 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e480f915-7cfc-471e-9d94-df1ee19c9fc2")
+	)
+	(wire
+		(pts
 			(xy 93.98 193.04) (xy 93.98 194.31)
 		)
 		(stroke
@@ -11500,6 +13080,16 @@
 			(type default)
 		)
 		(uuid "e5b1e8e0-d0d8-47ca-bf0a-ad247b212b22")
+	)
+	(wire
+		(pts
+			(xy 378.46 240.03) (xy 378.46 237.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5b566f2-3957-458e-a7d8-bf6811f0df81")
 	)
 	(wire
 		(pts
@@ -11540,6 +13130,16 @@
 			(type default)
 		)
 		(uuid "e842c0c0-c7a0-4151-a3a7-b2b8b801942d")
+	)
+	(wire
+		(pts
+			(xy 378.46 224.79) (xy 378.46 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8899fd4-c1d9-4bbb-9466-59dfc048312b")
 	)
 	(wire
 		(pts
@@ -11593,6 +13193,16 @@
 	)
 	(wire
 		(pts
+			(xy 367.03 219.71) (xy 378.46 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebe47369-6284-4ecc-af85-92220620a3d5")
+	)
+	(wire
+		(pts
 			(xy 220.98 106.68) (xy 232.41 106.68)
 		)
 		(stroke
@@ -11600,6 +13210,16 @@
 			(type default)
 		)
 		(uuid "ed2b8604-32ec-4875-a09a-990d3925850d")
+	)
+	(wire
+		(pts
+			(xy 378.46 222.25) (xy 378.46 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee76cc6d-b748-4dc9-8d23-2b4c9bd136c7")
 	)
 	(wire
 		(pts
@@ -11630,6 +13250,16 @@
 			(type default)
 		)
 		(uuid "eedbb503-42ec-4243-bda6-62d8d418d0a1")
+	)
+	(wire
+		(pts
+			(xy 349.25 184.15) (xy 361.95 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f02c5824-0f3b-4850-94c8-22affb4f6835")
 	)
 	(wire
 		(pts
@@ -11703,6 +13333,16 @@
 	)
 	(wire
 		(pts
+			(xy 378.46 234.95) (xy 378.46 232.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f992086b-6448-49db-8327-e9a5b6132bd8")
+	)
+	(wire
+		(pts
 			(xy 71.12 245.11) (xy 76.2 245.11)
 		)
 		(stroke
@@ -11743,6 +13383,16 @@
 	)
 	(wire
 		(pts
+			(xy 367.03 171.45) (xy 378.46 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa251dd4-af6d-428b-994e-24c95def78e3")
+	)
+	(wire
+		(pts
 			(xy 152.4 76.2) (xy 158.75 76.2)
 		)
 		(stroke
@@ -11780,6 +13430,16 @@
 			(type default)
 		)
 		(uuid "fbc744d7-87a2-4e84-9319-09f978863334")
+	)
+	(wire
+		(pts
+			(xy 378.46 189.23) (xy 378.46 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbf15755-7fb5-4aa5-9e57-6b110d612465")
 	)
 	(wire
 		(pts
@@ -11831,6 +13491,26 @@
 		)
 		(uuid "ffff1103-d215-46c5-a292-94c02d278825")
 	)
+	(label "PERSTA"
+		(at 349.25 199.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00712244-4a0a-4b28-b8ed-09ec0289ab03")
+	)
+	(label "REFCLKA-"
+		(at 349.25 151.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00dd6d56-dc15-40a5-8ac6-0e8e7c1638d1")
+	)
 	(label "PERSTB"
 		(at 229.87 116.84 180)
 		(effects
@@ -11851,6 +13531,16 @@
 		)
 		(uuid "02176d49-507f-41cc-bca9-3f34457e436c")
 	)
+	(label "TX4-"
+		(at 349.25 214.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "05d9a71b-3695-41b6-b8ed-87343effaa98")
+	)
 	(label "SSD1_RST"
 		(at 138.43 191.77 0)
 		(effects
@@ -11860,6 +13550,16 @@
 			(justify left bottom)
 		)
 		(uuid "06d474c7-d28a-4d0d-83dc-7ced0a05b6cd")
+	)
+	(label "RX1+"
+		(at 349.25 143.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0944f302-15cf-48ea-a15f-7a710062fc6d")
 	)
 	(label "CPRSNTA"
 		(at 57.15 245.11 0)
@@ -11931,6 +13631,16 @@
 		)
 		(uuid "19b83405-7d56-4991-bf77-ee7872bcf9f0")
 	)
+	(label "TX3+"
+		(at 349.25 212.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1aaeea90-6bfc-4b7a-8286-3f8075197751")
+	)
 	(label "RX5-"
 		(at 158.75 71.12 180)
 		(effects
@@ -11941,6 +13651,16 @@
 		)
 		(uuid "1e22c14e-b736-41c5-b2f9-d9941fbc6677")
 	)
+	(label "RX4+"
+		(at 349.25 166.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "20bde327-8cb7-4514-a6e2-749129211942")
+	)
 	(label "RX4-"
 		(at 158.75 66.04 180)
 		(effects
@@ -11950,6 +13670,26 @@
 			(justify right bottom)
 		)
 		(uuid "22077754-2e08-4439-badb-1092e9f0e8dc")
+	)
+	(label "RX0-"
+		(at 349.25 138.43 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "237a1bf1-0900-476e-b4b4-cf36f5f1962c")
+	)
+	(label "RX7-"
+		(at 349.25 186.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "23c2a894-3f50-44d3-8b0c-40cf83e7bb0d")
 	)
 	(label "FAN0_SPD"
 		(at 317.5 38.1 0)
@@ -11990,6 +13730,16 @@
 			(justify right bottom)
 		)
 		(uuid "2851267c-3c20-49fc-9992-a1cc90555894")
+	)
+	(label "RX6+"
+		(at 349.25 179.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "28870ee9-cc76-4ef8-a676-b933cfedd44e")
 	)
 	(label "RX5+"
 		(at 185.42 101.6 0)
@@ -12091,6 +13841,16 @@
 		)
 		(uuid "35a2da6b-9c42-4893-8dee-98d1e6c3557e")
 	)
+	(label "RX1-"
+		(at 349.25 146.05 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "371ac96a-49e8-4b87-bcca-f36fc2c3034f")
+	)
 	(label "A0"
 		(at 85.09 193.04 180)
 		(effects
@@ -12111,6 +13871,16 @@
 		)
 		(uuid "3978f8b6-ccd9-4541-9ec7-8abe031f74e2")
 	)
+	(label "TX5-"
+		(at 349.25 222.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3a364ab4-96bc-4e2e-9e37-bcfcb71604f2")
+	)
 	(label "PERSTB"
 		(at 166.37 201.93 180)
 		(effects
@@ -12120,6 +13890,16 @@
 			(justify right bottom)
 		)
 		(uuid "418840bc-2825-4955-8655-8f7cf636cdd2")
+	)
+	(label "CPRSNTA"
+		(at 349.25 201.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "43f8af9f-edf5-4dea-b4c3-7350100409e5")
 	)
 	(label "TX4+"
 		(at 102.87 63.5 0)
@@ -12140,6 +13920,16 @@
 			(justify left bottom)
 		)
 		(uuid "44d26176-0f1c-43d9-986d-e2e87802317b")
+	)
+	(label "RX3-"
+		(at 349.25 158.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "45f37b6e-b484-4bb3-8ad8-6fe5b688f465")
 	)
 	(label "TX6+"
 		(at 102.87 73.66 0)
@@ -12301,6 +14091,16 @@
 		)
 		(uuid "5f79fa4e-da9c-4d2c-81d5-1e4489886a1d")
 	)
+	(label "TX4+"
+		(at 349.25 217.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "62c32192-a05c-4cbe-b432-94d9f3211091")
+	)
 	(label "RX2-"
 		(at 158.75 55.88 180)
 		(effects
@@ -12321,6 +14121,16 @@
 		)
 		(uuid "650db65b-b929-4e60-a3b2-d9dc259af483")
 	)
+	(label "TX3-"
+		(at 349.25 209.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "654ef227-a95f-4219-b8ed-a0f953b73c7a")
+	)
 	(label "TX7-"
 		(at 102.87 81.28 0)
 		(effects
@@ -12330,6 +14140,26 @@
 			(justify left bottom)
 		)
 		(uuid "6598e8e0-9032-4209-93c6-708a2cb683a6")
+	)
+	(label "RX6-"
+		(at 349.25 181.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "673883ad-8751-42df-af41-38c0298308fa")
+	)
+	(label "RX2+"
+		(at 349.25 153.67 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6d3b99cc-75bc-4ebf-b1e3-d87f515a8130")
 	)
 	(label "TX5+"
 		(at 229.87 101.6 180)
@@ -12401,6 +14231,16 @@
 		)
 		(uuid "7cf27039-af51-437c-93dd-9a27b37a9eb0")
 	)
+	(label "CPRSNTB"
+		(at 349.25 227.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7f23f12e-fd7c-41e9-bb69-e7006b216b42")
+	)
 	(label "TX2-"
 		(at 229.87 73.66 180)
 		(effects
@@ -12411,6 +14251,16 @@
 		)
 		(uuid "8113ee6c-0787-43ba-9f56-f16db6d80960")
 	)
+	(label "REFCLKB-"
+		(at 349.25 173.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "826fd3f2-0e72-4cbe-afc2-e64928b78793")
+	)
 	(label "TX7+"
 		(at 229.87 132.08 180)
 		(effects
@@ -12420,6 +14270,16 @@
 			(justify right bottom)
 		)
 		(uuid "83a90b2f-43c6-4de5-8b22-b16270984624")
+	)
+	(label "RX7+"
+		(at 349.25 184.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "855acca8-f378-4895-b342-96aed25d72a5")
 	)
 	(label "REFCLKB-"
 		(at 185.42 116.84 0)
@@ -12481,6 +14341,16 @@
 		)
 		(uuid "8ecb7d53-f67e-4251-b752-d02d42e31309")
 	)
+	(label "TX7+"
+		(at 349.25 234.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8f66ab37-87a3-4ee8-a092-9dafd64f901d")
+	)
 	(label "CLK_AUTO_EN2"
 		(at 106.68 267.97 180)
 		(effects
@@ -12521,6 +14391,16 @@
 		)
 		(uuid "96916286-e4b4-449a-84e3-ca6fa22d1acd")
 	)
+	(label "TX0-"
+		(at 349.25 189.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "96b15cfc-f64a-4f8d-8bba-2ba7277dc797")
+	)
 	(label "TX7+"
 		(at 102.87 78.74 0)
 		(effects
@@ -12540,6 +14420,16 @@
 			(justify left bottom)
 		)
 		(uuid "9752a4e0-d93a-46ef-b19c-b9ef81298502")
+	)
+	(label "RX3+"
+		(at 349.25 161.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9777fdb3-0cd2-4284-8181-5deb30d74c8a")
 	)
 	(label "FAN0_PWM"
 		(at 25.4 120.65 0)
@@ -12601,6 +14491,16 @@
 		)
 		(uuid "a2929168-1251-434a-bb11-2a07fbe4a593")
 	)
+	(label "RX4-"
+		(at 349.25 163.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a2a71484-0223-4fc8-92d7-6b569a5235b6")
+	)
 	(label "SSD1_RST"
 		(at 85.09 130.81 180)
 		(effects
@@ -12610,6 +14510,16 @@
 			(justify right bottom)
 		)
 		(uuid "a48ef754-b1cb-4b2f-9e8e-33c84aa743c7")
+	)
+	(label "TX0+"
+		(at 349.25 191.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a5bd4628-1652-433e-9cc0-559055bd1bd9")
 	)
 	(label "CLKREQ1"
 		(at 102.87 87.63 0)
@@ -12681,6 +14591,16 @@
 		)
 		(uuid "adffbc35-173d-4bf7-a9ed-96c5d801b1bf")
 	)
+	(label "RX5+"
+		(at 349.25 168.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ae9995cc-b45d-463c-bde2-dff3a617320a")
+	)
 	(label "RX6+"
 		(at 185.42 124.46 0)
 		(effects
@@ -12700,6 +14620,26 @@
 			(justify right bottom)
 		)
 		(uuid "b398f9eb-c7bb-4267-8189-9225ea1e43e9")
+	)
+	(label "RX2-"
+		(at 349.25 156.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b475918a-dd5d-4226-b415-fb93dc947087")
+	)
+	(label "REFCLKA+"
+		(at 349.25 148.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b9043eef-cdce-448b-a74c-9644ed97f336")
 	)
 	(label "RX3-"
 		(at 185.42 78.74 0)
@@ -12771,6 +14711,16 @@
 		)
 		(uuid "c8178fd0-5dc6-4185-9b89-2277215be175")
 	)
+	(label "TX2+"
+		(at 349.25 204.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c895da81-0aa4-4759-8602-a7f14f54dc70")
+	)
 	(label "SSD2_RST"
 		(at 138.43 204.47 0)
 		(effects
@@ -12811,6 +14761,16 @@
 		)
 		(uuid "ca3bcbe7-7257-441c-acfd-531a396abef8")
 	)
+	(label "TX6+"
+		(at 349.25 232.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "caefa57a-d415-4359-b31f-3cf89dbcf151")
+	)
 	(label "I2C_SDA"
 		(at 85.09 111.76 180)
 		(effects
@@ -12830,6 +14790,16 @@
 			(justify left bottom)
 		)
 		(uuid "cdf98bd7-cc90-43b9-8aa5-2bc30d067c9b")
+	)
+	(label "TX1-"
+		(at 349.25 194.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cf594399-7c99-41a7-a7cc-4f43b495d94a")
 	)
 	(label "TX6+"
 		(at 229.87 127 180)
@@ -12861,6 +14831,26 @@
 		)
 		(uuid "d5038b5d-1da2-4181-89ad-6a6e9f7a8736")
 	)
+	(label "TX5+"
+		(at 349.25 219.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d5555006-8c93-4af0-9222-f11c9a9a9eb4")
+	)
+	(label "RX0+"
+		(at 349.25 140.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d8d98c73-6897-4a6a-b211-412319f3cf22")
+	)
 	(label "USB-"
 		(at 307.34 40.64 180)
 		(effects
@@ -12891,6 +14881,16 @@
 		)
 		(uuid "da8df710-32f3-4ab4-9f9f-ee6b373f8970")
 	)
+	(label "REFCLKB+"
+		(at 349.25 176.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dac3c2c8-6751-4113-bc75-c33f306747e8")
+	)
 	(label "TX0+"
 		(at 102.87 43.18 0)
 		(effects
@@ -12910,6 +14910,16 @@
 			(justify left bottom)
 		)
 		(uuid "def4e586-8fa6-4dc5-a5cb-54c8b1062ab4")
+	)
+	(label "TX1+"
+		(at 349.25 196.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "df5505aa-ab60-48dc-a244-fd6c9d60df00")
 	)
 	(label "CLKREQ2"
 		(at 149.86 262.89 180)
@@ -12931,6 +14941,26 @@
 		)
 		(uuid "df5ac668-0475-4db9-a206-bd022c54ab7c")
 	)
+	(label "TX7-"
+		(at 349.25 237.49 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e2fa9680-da53-414f-aa30-a838ac740c03")
+	)
+	(label "PERSTB"
+		(at 349.25 224.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e64be50c-0086-4a86-b2d0-b4881546826f")
+	)
 	(label "PEX_RST"
 		(at 102.87 85.09 0)
 		(effects
@@ -12941,6 +14971,16 @@
 		)
 		(uuid "e7ce8c96-d44c-422a-809c-fbcb10a47b29")
 	)
+	(label "RX5-"
+		(at 349.25 171.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e94fd513-2bfe-438e-a2bd-5a8402ad58e5")
+	)
 	(label "RX2-"
 		(at 185.42 73.66 0)
 		(effects
@@ -12950,6 +14990,26 @@
 			(justify left bottom)
 		)
 		(uuid "e9beed7b-3f5b-47f2-82be-45cc0b3e1d75")
+	)
+	(label "TX6-"
+		(at 349.25 229.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ea9b5745-e067-4615-82c6-6daadfd52b3f")
+	)
+	(label "TX2-"
+		(at 349.25 207.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "eaac9487-8f0c-4ae5-af0b-169e9070917d")
 	)
 	(label "TX0-"
 		(at 102.87 45.72 0)
@@ -13290,6 +15350,107 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 148.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "055c086e-632d-4916-b837-96d32124cf90")
+		(property "Reference" "D5"
+			(at 361.442 147.574 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 147.574 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 148.59 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 148.59 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e3a3709a-b0fb-4a3a-b780-9b1be9c6d74e")
+		)
+		(pin "2"
+			(uuid "6f6825bc-641c-4266-afa3-ee67f09a2efa")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 396.24 35.56 0)
 		(unit 1)
@@ -13361,6 +15522,107 @@
 			(project "fw16_oculink8i"
 				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
 					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 181.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0af120df-f924-4e9c-8501-fd029c373c8b")
+		(property "Reference" "D18"
+			(at 361.442 180.594 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 180.594 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 181.61 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 181.61 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fd1aa57c-df95-434a-a956-b78378b01be9")
+		)
+		(pin "2"
+			(uuid "e12dd5c7-3997-479b-8d79-9179f3395d8b")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D18")
 					(unit 1)
 				)
 			)
@@ -14357,6 +16619,107 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 222.25 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1ada9dc8-9230-4d7b-8cb9-da1193b85683")
+		(property "Reference" "D34"
+			(at 361.442 221.234 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 221.234 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 222.25 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 222.25 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 222.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 222.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 222.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "48baecb2-d2e7-49ab-a1e3-83ff6b105bca")
+		)
+		(pin "2"
+			(uuid "bfb7cda9-1884-4b41-91ec-67cfea7b88d0")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 208.28 147.32 0)
 		(unit 1)
@@ -14525,6 +16888,107 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 227.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1fc9eba0-73b1-4abc-90ec-4c0a1e68698a")
+		(property "Reference" "D36"
+			(at 361.442 226.314 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 226.314 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 227.33 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 227.33 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 227.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 227.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 227.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ddfb4b05-a56f-4ee6-bf2d-47226257a13c")
+		)
+		(pin "2"
+			(uuid "f076d6c3-ae61-4cb3-b1b1-7afa038f0cc3")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 138.43 262.89 90)
 		(unit 1)
@@ -14533,7 +16997,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "224df6a0-4416-4756-8828-bbf62858fec1")
 		(property "Reference" "R19"
 			(at 138.43 264.414 90)
@@ -14930,6 +17394,208 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 179.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3d08c8e1-d920-4e53-9f3a-39074b58ebc4")
+		(property "Reference" "D17"
+			(at 361.442 178.054 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 178.054 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 179.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 179.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "da23989e-6e3a-4800-993a-6e40fdc1aae8")
+		)
+		(pin "2"
+			(uuid "7bca83b2-e9fb-4bf1-8044-913b43b65437")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 234.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "41a9cd64-1ee8-4130-8ded-b33d4eede81c")
+		(property "Reference" "D39"
+			(at 361.442 233.934 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 233.934 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 234.95 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 234.95 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "090ee9ca-a160-474f-af08-43500e5dff23")
+		)
+		(pin "2"
+			(uuid "874580d1-4b4d-4e0a-9f1b-ec43a38237aa")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_DPDT_x2")
 		(at 128.27 262.89 180)
 		(unit 2)
@@ -15098,6 +17764,107 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 143.51 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "432494ca-6a02-4171-a8a0-d478e15613ae")
+		(property "Reference" "D3"
+			(at 361.442 142.494 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 142.494 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 143.51 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 143.51 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a3a2b3aa-f427-412f-b7e2-6f41413fd9c5")
+		)
+		(pin "2"
+			(uuid "63e4c168-20cf-4ad1-9083-85e4555115f4")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Comparator:LM393")
 		(at 40.64 255.27 0)
 		(unit 3)
@@ -15130,7 +17897,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+		(property "Footprint" "Package_SO:TSSOP-8_4.4x3mm_P0.65mm"
 			(at 40.64 255.27 0)
 			(hide yes)
 			(show_name no)
@@ -15192,6 +17959,107 @@
 				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
 					(reference "U1")
 					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 194.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "43cc89ba-8029-498d-b327-27b4364d378c")
+		(property "Reference" "D23"
+			(at 361.442 193.294 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 193.294 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 194.31 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 194.31 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8704a77c-6818-41d8-9373-c5e01afa27eb")
+		)
+		(pin "2"
+			(uuid "bb14cad0-7e3f-4369-ba9a-456e337394f5")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D23")
+					(unit 1)
 				)
 			)
 		)
@@ -15351,6 +18219,208 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 201.93 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "47b23d6f-ac01-4c4b-872d-8b576b3a7a2e")
+		(property "Reference" "D26"
+			(at 361.442 200.914 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 200.914 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 201.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 201.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6620f9e5-924b-4ecc-a9b1-7fd6f5588892")
+		)
+		(pin "2"
+			(uuid "22ac81f3-8551-4e52-9916-0a4b646904ac")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 191.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4935e969-f9f5-4836-908d-11f5ff8f919c")
+		(property "Reference" "D22"
+			(at 361.442 190.754 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 190.754 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 191.77 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 191.77 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0f74daa3-7730-4ed2-8a56-9ff4b4e6ed02")
+		)
+		(pin "2"
+			(uuid "ae491566-ec45-4e3b-8880-4f7dc7e987c3")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 101.6 203.2 0)
 		(unit 1)
@@ -15422,6 +18492,208 @@
 			(project "fw16_oculink8i"
 				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
 					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 196.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4a48bb81-c273-4030-ace0-ba4297f7e51b")
+		(property "Reference" "D24"
+			(at 361.442 195.834 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 195.834 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 196.85 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 196.85 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8328fad8-8b36-4fec-89ff-db74166d5d4f")
+		)
+		(pin "2"
+			(uuid "a1c1b12e-8ea4-4234-aeb7-8f262124d1a5")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 166.37 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4d8c0078-0099-42f6-a919-9e2f2f11737d")
+		(property "Reference" "D12"
+			(at 361.442 165.354 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 165.354 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 166.37 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 166.37 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b53e980a-2d89-439d-9752-37591858212e")
+		)
+		(pin "2"
+			(uuid "cc0147d7-58bb-483e-957c-64cc4995f9b9")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D12")
 					(unit 1)
 				)
 			)
@@ -15973,6 +19245,107 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 168.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "61c736ca-2dc0-43e3-8397-28b22e0f71c9")
+		(property "Reference" "D13"
+			(at 361.442 167.894 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 167.894 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 168.91 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 168.91 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "268313dc-8f92-4774-b0d0-f09c6991216a")
+		)
+		(pin "2"
+			(uuid "9fe4c27a-aaf2-4082-8524-79c9e93dbdda")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 78.74 153.67 0)
 		(unit 1)
@@ -16285,6 +19658,107 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 151.13 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6c51e664-5124-4425-8e6c-965e0eeb518c")
+		(property "Reference" "D6"
+			(at 361.442 150.114 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 150.114 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 151.13 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 151.13 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "43d076b8-0f34-4aa4-8a18-240e009490f3")
+		)
+		(pin "2"
+			(uuid "0dce386f-3405-475f-aa85-6369473cf383")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 232.41 139.7 0)
 		(unit 1)
@@ -16440,6 +19914,208 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 219.71 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6ff01ecc-57ff-494e-bdd4-89274698e4e7")
+		(property "Reference" "D33"
+			(at 361.442 218.694 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 218.694 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 219.71 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 219.71 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "917f6ecf-23a4-460f-91d4-d69f2bd7a851")
+		)
+		(pin "2"
+			(uuid "cfc8ac20-a07e-4b71-96fd-801431923895")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 184.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "70d07757-e967-4c3f-bc48-b6e88a37b819")
+		(property "Reference" "D19"
+			(at 361.442 183.134 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 183.134 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 184.15 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 184.15 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "df5476d1-4179-4c8e-9a3f-6f3714cc9b90")
+		)
+		(pin "2"
+			(uuid "2fdf3dd2-8cff-41e4-8fc4-056f46715f4a")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 50.8 204.47 0)
 		(unit 1)
@@ -16511,6 +20187,107 @@
 			(project "fw16_oculink8i"
 				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
 					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 199.39 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7870780c-2288-46b9-9cec-176305490f8f")
+		(property "Reference" "D25"
+			(at 361.442 198.374 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 198.374 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 199.39 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 199.39 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 199.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 199.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 199.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "10176632-3d21-4ae1-93e7-0a2b40ff1393")
+		)
+		(pin "2"
+			(uuid "5aa62634-22ec-4778-87be-53301132dafb")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D25")
 					(unit 1)
 				)
 			)
@@ -16750,6 +20527,107 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 229.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "82f3c3ff-fe4d-4009-b97b-bbcc23c63cdd")
+		(property "Reference" "D37"
+			(at 361.442 228.854 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 228.854 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 229.87 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 229.87 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "639401ef-f97d-40ad-bdb6-b2cad17fce11")
+		)
+		(pin "2"
+			(uuid "c5fd48b8-06d9-4b6c-a815-1b6fb402ef1e")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic_MountingPin:Conn_01x04_MountingPin")
 		(at 332.74 35.56 0)
 		(unit 1)
@@ -16840,6 +20718,107 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 214.63 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8657109c-38f1-46f7-8ce8-f70bfce1c905")
+		(property "Reference" "D31"
+			(at 361.442 213.614 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 213.614 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 214.63 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 214.63 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c3e864d2-b632-4a18-ae9d-3a5a7860182a")
+		)
+		(pin "2"
+			(uuid "b5781da4-41be-40a7-b16c-4e4900898589")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+12V")
 		(at 33.02 115.57 0)
 		(unit 1)
@@ -16911,6 +20890,107 @@
 			(project "fw16_oculink8i"
 				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 207.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8c569ffd-15e8-4cc9-a3f4-0897be72de65")
+		(property "Reference" "D28"
+			(at 361.442 205.994 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 205.994 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 207.01 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 207.01 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "affea39a-8a2e-43e4-b8f1-c07e3a52d786")
+		)
+		(pin "2"
+			(uuid "a451d05c-09e6-4cf9-bf4b-f144709e5ea7")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D28")
 					(unit 1)
 				)
 			)
@@ -17257,6 +21337,107 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 186.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "982ccccf-76f0-4a68-a754-7d7e61a99587")
+		(property "Reference" "D20"
+			(at 361.442 185.674 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 185.674 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 186.69 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 186.69 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "274eec67-a909-4584-b97f-06d0fb92b10b")
+		)
+		(pin "2"
+			(uuid "a48bfa95-f10c-45db-b08a-e9cf7b7ec4d0")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 87.63 107.95 0)
 		(unit 1)
@@ -17334,6 +21515,107 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 173.99 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9b13ef7f-4a44-4849-98d7-fd00e70eb5bb")
+		(property "Reference" "D15"
+			(at 361.442 172.974 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 172.974 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 173.99 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 173.99 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c654fc1f-6d5f-45ba-87e0-94ce2a515245")
+		)
+		(pin "2"
+			(uuid "9cbbffdd-23a8-4aca-8e68-97f87677647d")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 182.88 139.7 0)
 		(unit 1)
@@ -17405,6 +21687,107 @@
 			(project "fw16_oculink8i"
 				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
 					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 224.79 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9baed31b-3089-4319-ad12-24f3efd4a949")
+		(property "Reference" "D35"
+			(at 361.442 223.774 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 223.774 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 224.79 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 224.79 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 224.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 224.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 224.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ab49b78f-a8ad-4d0d-8ae7-6de62f76f383")
+		)
+		(pin "2"
+			(uuid "d9eb1b00-795b-4ab2-b104-baad05cd28d8")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D35")
 					(unit 1)
 				)
 			)
@@ -17739,6 +22122,107 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 232.41 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a3a3d6d9-9a79-493d-9439-c96dc0bfe643")
+		(property "Reference" "D38"
+			(at 361.442 231.394 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 231.394 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 232.41 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 232.41 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 232.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 232.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 232.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "640e8859-17bb-4087-b1d5-88725ad4c463")
+		)
+		(pin "2"
+			(uuid "2646045c-14e4-4b46-aa79-521af5ec864b")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 81.28 204.47 0)
 		(unit 1)
@@ -17810,6 +22294,107 @@
 			(project "fw16_oculink8i"
 				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
 					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 209.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "aa9616e1-42ee-474b-86dd-d6a016cea120")
+		(property "Reference" "D29"
+			(at 361.442 208.534 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 208.534 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 209.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 209.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e6ec8f95-e81a-4ee3-b6a3-59474f57bf3b")
+		)
+		(pin "2"
+			(uuid "5e990d64-5d6c-4dbf-aeeb-72f4fb57943d")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D29")
 					(unit 1)
 				)
 			)
@@ -17985,6 +22570,208 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 212.09 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b0bb7e24-6152-4507-9bd5-987cdab8c1b7")
+		(property "Reference" "D30"
+			(at 361.442 211.074 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 211.074 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 212.09 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 212.09 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 212.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 212.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 212.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bf9bf4e5-7732-4a51-ab8a-d925289a8132")
+		)
+		(pin "2"
+			(uuid "f2d5b454-394d-40b7-977f-e391d157c67d")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 189.23 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b2981f3b-564c-48b0-ba72-b658d8b79535")
+		(property "Reference" "D21"
+			(at 361.442 188.214 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 188.214 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 189.23 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 189.23 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "77d7c7be-641a-4013-908c-275586236d74")
+		)
+		(pin "2"
+			(uuid "f77850e4-84eb-461e-b101-a606e2b26488")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 34.29 255.27 0)
 		(mirror x)
@@ -18067,6 +22854,107 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 140.97 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b4fd4655-94c3-40e5-9b48-44f1186e4eb3")
+		(property "Reference" "D2"
+			(at 361.442 139.954 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 139.954 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 140.97 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 140.97 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "db1819a6-2d9d-438b-a621-6f0e64040bd9")
+		)
+		(pin "2"
+			(uuid "5271df91-a171-4926-b991-87aec624feb0")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 73.66 260.35 0)
 		(mirror x)
@@ -18141,6 +23029,107 @@
 			(project "fw16_oculink8i"
 				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
 					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 217.17 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b7dee9ea-bdc8-420e-83ee-0b711b852bbd")
+		(property "Reference" "D32"
+			(at 361.442 216.154 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 216.154 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 217.17 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 217.17 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 217.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 217.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 217.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3088e6ae-65ec-47c9-a17b-da51f14e3285")
+		)
+		(pin "2"
+			(uuid "6c1fe4d6-e372-4f09-a872-2fc45e6ea997")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D32")
 					(unit 1)
 				)
 			)
@@ -18388,6 +23377,107 @@
 			(project "fw16_oculink8i"
 				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
 					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 158.75 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bee47ef9-e3f5-4f39-a4b7-c6ea1f8d699e")
+		(property "Reference" "D9"
+			(at 361.442 157.734 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 157.734 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 158.75 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 158.75 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "517f389e-bc1d-4fa9-b629-b008394b7f8e")
+		)
+		(pin "2"
+			(uuid "efb3fbb1-43a3-4c51-bf20-56813b237952")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -18643,6 +23733,107 @@
 			(project "fw16_oculink8i"
 				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 237.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c9381495-c958-4ed6-ab69-c6dea74f6ce6")
+		(property "Reference" "D40"
+			(at 361.442 236.474 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 236.474 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 237.49 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 237.49 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9a60f954-97f2-4cab-b137-1d44576c67d4")
+		)
+		(pin "2"
+			(uuid "82931468-02a8-4686-b11e-2136e8e8dadc")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D40")
 					(unit 1)
 				)
 			)
@@ -19337,6 +24528,107 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 146.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d25ff4b1-0730-4327-a4c3-50838e1887df")
+		(property "Reference" "D4"
+			(at 361.442 145.034 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 145.034 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 146.05 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 146.05 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a3a2b3aa-f427-412f-b7e2-6f41413fd9c6")
+		)
+		(pin "2"
+			(uuid "63e4c168-20cf-4ad1-9083-85e4555115f5")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:USB_A")
 		(at 293.37 38.1 0)
 		(unit 1)
@@ -19687,7 +24979,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+		(property "Footprint" "Package_SO:TSSOP-8_4.4x3mm_P0.65mm"
 			(at 83.82 267.97 0)
 			(hide yes)
 			(show_name no)
@@ -19749,6 +25041,107 @@
 				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
 					(reference "U1")
 					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 153.67 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e15c4bbe-da9a-4c61-b047-f6616b456ffa")
+		(property "Reference" "D7"
+			(at 361.442 152.654 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 152.654 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 153.67 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 153.67 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "86e4c579-8f36-41a3-9e9d-fe5160997e38")
+		)
+		(pin "2"
+			(uuid "94634b16-94cc-43ff-aebb-39ff2228e52a")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D7")
+					(unit 1)
 				)
 			)
 		)
@@ -19924,6 +25317,107 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 163.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "eaf10846-9c26-4bf8-839c-50edecdeb37d")
+		(property "Reference" "D11"
+			(at 361.442 162.814 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 162.814 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 163.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 163.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5a3442aa-0eaf-401c-93d3-ac0e1692516c")
+		)
+		(pin "2"
+			(uuid "db2dffc9-0bb6-4a70-88e9-89dd0097f283")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 45.72 248.92 0)
 		(mirror y)
@@ -19998,6 +25492,208 @@
 			(project "fw16_oculink8i"
 				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 156.21 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "eb1db7be-4c6a-45de-ba1d-aa348495c805")
+		(property "Reference" "D8"
+			(at 361.442 155.194 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 155.194 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 156.21 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 156.21 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "be9e8b3f-9b8f-4e7e-b173-5ba7f44eb575")
+		)
+		(pin "2"
+			(uuid "11b496f5-b384-4b38-a97e-399923b3b190")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 138.43 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "eb712dab-eeea-4fd2-8b90-fc3034b37a88")
+		(property "Reference" "D1"
+			(at 361.442 137.414 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 137.414 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 138.43 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 138.43 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "445f909a-1b45-41fc-8132-5fb52e90ed3a")
+		)
+		(pin "2"
+			(uuid "a8c87f0a-e815-4ecb-91e0-08b6898bbb7d")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -20161,6 +25857,309 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 176.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f574ae65-5a07-4dd0-8c08-e490828db596")
+		(property "Reference" "D16"
+			(at 361.442 175.514 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 175.514 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 176.53 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 176.53 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cf91d8a5-78f2-44d4-8554-8561f12a5521")
+		)
+		(pin "2"
+			(uuid "3e3fcffc-76e8-43e7-a6c3-72150d48f231")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 204.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f7b13807-84fd-415f-b82a-d6d6913c40fc")
+		(property "Reference" "D27"
+			(at 361.442 203.454 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 203.454 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 204.47 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 204.47 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "253770ba-e68c-4754-ac41-3797d4b74311")
+		)
+		(pin "2"
+			(uuid "87494104-6b60-4667-a0c0-2de1d7982157")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 161.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f9ec96bf-961f-4a27-96ec-f3dd8afe670f")
+		(property "Reference" "D10"
+			(at 361.442 160.274 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 160.274 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 161.29 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 161.29 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00f936d7-6067-481e-a1b4-6a74dc8f4b19")
+		)
+		(pin "2"
+			(uuid "b4bff236-1a36-4ef0-996a-349d0fde5e85")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Comparator:LM393")
 		(at 83.82 247.65 0)
 		(unit 1)
@@ -20191,7 +26190,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+		(property "Footprint" "Package_SO:TSSOP-8_4.4x3mm_P0.65mm"
 			(at 83.82 247.65 0)
 			(hide yes)
 			(show_name no)
@@ -20252,6 +26251,184 @@
 			(project "fw16_oculink8i"
 				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 364.49 171.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fb23455e-00b9-4f49-9e93-1e6774609732")
+		(property "Reference" "D14"
+			(at 361.442 170.434 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPD1E01B04"
+			(at 371.602 170.434 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
+			(at 364.49 171.45 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 171.45 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 364.49 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 364.49 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 364.49 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4fafe03a-372f-40a2-9ee9-133b898b230d")
+		)
+		(pin "2"
+			(uuid "5aa877b8-22b3-48be-ad0a-581a5c6e9cb0")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "D14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 378.46 240.03 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fc2f8496-a3a6-415f-8b7e-025da62b63a3")
+		(property "Reference" "#PWR035"
+			(at 378.46 246.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 381 240.284 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 378.46 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 378.46 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 378.46 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2687088e-8002-450d-b202-e0a4ae22d474")
+		)
+		(instances
+			(project "fw16_oculink8i"
+				(path "/50f5fd03-67f8-43d1-8bfe-dca2cf908bf0"
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
