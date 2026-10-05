@@ -635,8 +635,8 @@
       },
       {
         "clearance": 0.1,
-        "diff_pair_gap": 0.1016,
-        "diff_pair_width": 0.109728,
+        "diff_pair_gap": 0.1001,
+        "diff_pair_width": 0.1778,
         "name": "PCIe",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 3,
@@ -655,8 +655,8 @@
       },
       {
         "clearance": 0.1,
-        "diff_pair_gap": 0.12192,
-        "diff_pair_width": 0.105156,
+        "diff_pair_gap": 0.1001,
+        "diff_pair_width": 0.1278,
         "name": "USB2",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2,
